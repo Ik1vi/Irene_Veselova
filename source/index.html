@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<title>Portfolio</title>
+
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<!-- link rel="preload" позволяет определить ресурсы, которые понадобятся на вашей странице вскоре после загрузки.
+		Заранее даем браузеру информацию о данных, которые будут загружены из последующих ссылок.
+
+		Предварительная загрузка шрифта – ставит шрифты в приоритет загрузки браузером.
+		Помогает избежать неоправданную задержку рендеринга текста, FOIT и минимализировать FOUT -->
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font"/> <!-- Все браузеры, которые поддерживают preload, также поддерживают WOFF2 -->
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-500.woff2" as="font"/>
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font"/>
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-900.woff2" as="font"/>
+
+		<link rel="stylesheet" type="text/css" href="styles/style.min.css"/>
+	</head>
+
+	<body class="js-body no-js">
+		<header class="header">
+			<div class= "fixed-container">
+				<div class="header__bar">
+					<nav class="header__menu page-nav">
+						<button class="page-nav__btn-menu btn-menu" type="button" aria-label="Показать меню"></button>
+
+						<ul class="page-nav__list">
+							<li class="page-nav__item">
+								<a class="page-nav__link" href="#">Услуги</a>
+							</li>
+							<li class="page-nav__item">
+								<a class="page-nav__link page-nav__link--active" href="#">Портфолио</a>
+							</li>
+							<li class="page-nav__item">
+								<a class="page-nav__link" href="#">Стоимость</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="header__phone-contacts">
+						<a class="header__phone" href="tel:+7(499)995-55-77">+7 (499) 995-55-77</a>
+
+						<button class="btn call-btn header__call-btn js-call-btn" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+					</div>
+				</div>
+
+				<div class="header__background">
+
+					<picture>
+						<source media="(max-width: 1023px)" type="image/webp" srcset="img/225x335_webP_1x.webp 1x, img/225x335_webP_2x.webp 2x">
+
+						<source type="image/webp" srcset="img/572x782_webP_1x.webp 1x, img/572x782_webP_2x.webp 2x">
+
+						<source media="(max-width: 1023px)" srcset="img/225x335_png_1x.png 1x, img/225x335_png_2x.png 2x">
+
+						<img class="header__portrait" src="img/572x782_png_1x.png" srcset="img/572x782_png_2x.png" alt="Frontend-разработчик и дизайнер"/>
+					</picture>
+				</div>
+
+				<h1 class="header__title">Ирина Веселова
+					<span class="header__profession">Frontend-разработчик и дизайнер</span>
+				</h1>
+
+				<a class="btn btn--primary header__btn" href="#">Узнать больше</a>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__section page-section">
+				<div class="fixed-container">
+					<h2 class="page-section__title">Что я делаю</h2>
+
+					<ul class="page-section__list cases-list">
+						<li class="cases-list__item">
+							<p class="cases-list__p">Вёрстка лендинг–страниц
+								и сайтов любой сложности</p>
+						</li>
+						<li class="cases-list__item">
+							<p class="cases-list__p">Адаптивная вёрстка под все
+								браузеры и устройства</p>
+						</li>
+						<li class="cases-list__item">
+							<p class="cases-list__p">Frontend–разработка
+								и программирование</p>
+						</li>
+						<li class="cases-list__item">
+							<p class="cases-list__p">Исправление и доработка
+								существующей вёрстки</p>
+						</li>
+					</ul>
+
+					<a class="btn btn--primary page-section__btn" href="#">Узнать стоимость</a>
+				</div>
+			</section>
+
+			<section class="page__section page-section page-section--secondary-background">
+				<h2 class="page-section__title">Примеры моих работ</h2>
+
+				<div class= "fixed-container page-section__portfolio portfolio">
+					<button class="btn portfolio__btn carousel-btn portfolio__btn--previous" type="button" aria-label="Посмотреть предыдущую работу"></button>
+					<button class="btn portfolio__btn carousel-btn portfolio__btn--next" type="button" aria-label="Посмотреть следующую работу"></button>
+
+					<ul class="portfolio__list">
+						<li class="portfolio__item js-portfolio-item">
+							<article>
+								<picture>
+									<source media="(max-width: 1023px)" type="image/webp" srcset="img/280x250_webP_1x.webp 1x, img/280x250_webP_2x.webp 2x">
+
+									<source type="image/webp" srcset="img/455x360_webP_1x.webp 1x, img/455x360_webP_2x.webp 2x">
+
+									<source media="(max-width: 1023px)" srcset="img/280x250_png_1x.png 1x, img/280x250_png_2x.png 2x">
+
+									<source type="image/png" srcset="img/455x360_png_1x.png 1x, img/455x360_png_2x.png 2x">
+
+									<img class="portfolio__img" src="img/455x360_png_1x.png" srcset="img/455x360_png_2x.png" alt="Сайт психолога Веры Антоновой"/>
+								</picture>
+
+								<h3 class="portfolio__h3">
+									<a class="portfolio__link" href="#">Сайт психолога Веры Антоновой</a>
+								</h3>
+							</article>
+						</li>
+
+						<li class="portfolio__item js-portfolio-item">
+							<article>
+								<picture>
+									<source media="(max-width: 1023px)" type="image/webp" srcset="img/280x250_webP_1x.webp 1x, img/280x250_webP_2x.webp 2x">
+
+									<source type="image/webp" srcset="img/455x360_webP_1x.webp 1x, img/455x360_webP_2x.webp 2x">
+
+									<source media="(max-width: 1023px)" srcset="img/280x250_png_1x.png 1x, img/280x250_png_2x.png 2x">
+
+									<source type="image/png" srcset="img/455x360_png_1x.png 1x, img/455x360_png_2x.png 2x">
+
+									<img class="portfolio__img" src="img/455x360_png_1x.png" srcset="img/455x360_png_2x.png" alt="Сайт магазина детской одежды"/>
+								</picture>
+
+								<h3 class="portfolio__h3">
+									<a class="portfolio__link" href="#">Сайт магазина детской одежды</a>
+								</h3>
+							</article>
+						</li>
+
+						<li class="portfolio__item js-portfolio-item">
+							<article>
+								<picture>
+									<source media="(max-width: 1023px)" type="image/webp" srcset="img/280x250_webP_1x.webp 1x, img/280x250_webP_2x.webp 2x">
+
+									<source type="image/webp" srcset="img/455x360_webP_1x.webp 1x, img/455x360_webP_2x.webp 2x">
+
+									<source media="(max-width: 1023px)" srcset="img/280x250_png_1x.png 1x, img/280x250_png_2x.png 2x">
+
+									<source type="image/png" srcset="img/455x360_png_1x.png 1x, img/455x360_png_2x.png 2x">
+
+									<img class="portfolio__img" src="img/455x360_png_1x.png" srcset="img/455x360_png_2x.png" alt="Сайт магазина «Рыболов»"/>
+								</picture>
+
+								<h3 class="portfolio__h3">
+									<a class="portfolio__link" href="#">Сайт магазина «Рыболов»</a>
+								</h3>
+							</article>
+						</li>
+					</ul>
+
+					<ul class="portfolio__pagination pagination js-pagination">
+						<li>
+							<button class="pagination__dot js-pagination-dot pagination__dot--active" type="button" aria-label="Примеры работ, часть один"></button>
+						</li>
+						<li>
+							<button class="pagination__dot js-pagination-dot" type="button" aria-label="Примеры работ, часть два"></button>
+						</li>
+						<li>
+							<button class="pagination__dot js-pagination-dot" type="button" aria-label="Примеры работ, часть три"></button>
+						</li>
+					</ul>
+				</div>
+
+				<button class="btn btn--primary page-section__btn" type="button" >Заказать проект</button>
+			</section>
+
+			<section class="page__price price">
+				<h2 class="visually-hidden">Оперативная верстка любой сложности</h2>
+
+				<div class="fixed-container price__wrapper">
+					<p class="price__h2-like">Адаптивная вёрстка под все устройства
+						и браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*
+					</p>
+
+					<p class="price__p">
+						<small>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,
+						в зависимости от&nbsp;сложности&nbsp;задач.</small>
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="fixed-container footer__container">
+				<ul class="footer__page-nav page-nav page-nav--vertical">
+					<li class="page-nav__item">
+						<a class="page-nav__link page-nav__link--grey" href="#">Услуги</a>
+					</li>
+					<li class="page-nav__item">
+						<a class="page-nav__link page-nav__link--grey" href="#">Портфолио</a>
+					</li>
+					<li class="page-nav__item">
+						<a class="page-nav__link page-nav__link--grey" href="#">Стоимость</a>
+					</li>
+				</ul>
+
+				<address class="footer__contacts contacts">
+					<ul class="contacts__list">
+						<li class="contacts__item">
+							<a class="contacts__link contacts__link--phone" href="tel:+7(499)995-77-55">+7 (499) 995-77-55</a>
+						</li>
+
+						<li class="contacts__item">
+							<a class="contacts__link contacts__link--mail" href="mailto:info@agency.ru">dmitry@alekseev.com</a>
+						 </li>
+					</ul>
+				</address>
+
+				<div class="footer__media-container">
+					<button class="btn call-btn call-btn--wide footer__call-btn" type="button">Заказать звонок</button>
+
+					<ul class="footer__social-list socials">
+						<li class="socials__item">
+							<a class="socials__link" href="#" aria-label="Перейти в профиль ВКонтакте"> </a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#" aria-label="Перейти в профиль на Facebook"> </a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#" aria-label="Перейти в профиль Twitter"> </a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#" aria-label="Перейти в профиль Instagram"> </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<p class="footer__copyright">© Дмитрий Алексеев, 2016 – 2018</p>
+		</footer>
+
+		<script src="scripts/all.js"></script>
+	</body>
+</html>

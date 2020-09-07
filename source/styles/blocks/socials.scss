@@ -1,0 +1,44 @@
+.socials {
+  @include flex-container(space-between, flex-end);
+
+	max-width: 195px;
+  @include list-el-reset();
+
+  @media (max-width: 1169px) {
+    min-width: 190px;
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 197px;
+  }
+
+  &__item {
+  	padding: 8px 0;
+  }
+
+  &__link {
+  	display: block;
+
+  	padding: 10px 17px;
+
+  	background-image: url('../img/icons/social-media-sprite.jpg');
+  }
+
+  &__item:nth-child(2) &__link {
+  	padding: 15px 17px;
+
+  	background-position: 0 bottom;
+  }
+
+  &__item:nth-child(3) &__link {
+  	padding: 12px 15px;
+
+  	background-position: right 0;
+  }
+
+  &__item:nth-child(4) &__link {
+  	padding: 14px 18px;
+
+  	background-position: right bottom;
+  }
+}

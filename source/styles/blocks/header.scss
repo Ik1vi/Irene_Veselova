@@ -1,0 +1,170 @@
+.header {
+	position: relative;
+	z-index: 0;
+
+  padding-bottom: 235px;
+
+	background-color: $background-secondary-color;
+	overflow: hidden;
+
+  @media (max-width: 1169px) {
+    padding-bottom: 230px;
+  }
+
+  @media (max-width: 1023px) {
+    padding-bottom: 0;
+
+    text-align: center;
+    background-color: $background-color;
+  }
+
+  &__bar {
+    @include flex-container(space-between, center);
+
+  	padding-top: 27px;
+
+    @media (max-width: 1169px) {
+      padding-top: 29px;
+    }
+
+    @media (max-width: 1023px) {
+      padding-top: 25px;
+    }
+  }
+
+  &__menu {
+      margin: 0;
+  }
+
+  &__phone-contacts {
+    @include flex-container(space-between, center);
+
+    min-width: 457px;
+    max-width: 500px;
+		@include indent-reset;
+
+    @media (max-width: 1023px) {
+      min-width: 221px;
+  		max-width: 300px;
+    }
+  }
+
+  &__phone {
+    min-width: 240px;
+
+  	font-weight: 700;
+    font-size: 25px;
+
+    @media (max-width: 1169px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 1023px) {
+      min-width: auto;
+
+  		font-size: 18px;
+    }
+  }
+
+  &__call-btn {
+    margin-bottom: 10px;
+  }
+
+  &__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+		@include background-image(url('../img/icons/figure.svg'), 779px 139px);
+    background-size: 919px;
+
+    @media (max-width: 1169px) {
+      background-size: 919px 633px;
+  		background-position: 479px 243px;
+    }
+
+    @media (max-width: 1023px) {
+      max-height: 467px;
+  		padding-top: 140px;
+
+  		background-size: 463px;
+  		background-position: 38% 173px;
+    }
+  }
+
+  &__portrait {
+    position: absolute;
+    top: 130px;
+    left: 850px;
+
+    @media (max-width: 1169px) {
+      left: 535px;
+
+      max-width: 470px;
+    }
+
+    @media (max-width: 1023px) {
+      position: relative;
+      left: unset;
+      top: unset;
+
+      width: 225px;
+      max-width: unset;
+    }
+  }
+
+  &__title {
+  	max-width: 800px;
+  	margin: 200px 0 40px;
+
+    font-size: 80px;
+    font-weight: 900;
+
+    @media (max-width: 1169px) {
+      margin-top: 229px;
+
+  		font-size: 53px;
+    }
+
+    @media (max-width: 1023px) {
+      margin: 425px 0 25px;
+
+  		font-size: 31px;
+  		text-align: center;
+    }
+  }
+
+  &__profession {
+  	display: block;
+
+  	margin: 0;
+
+    text-align: left;
+    font-size: 25px;
+
+    font-weight: 400;
+    color: $text-secondary-color;
+
+    @media (max-width: 1169px) {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 1023px) {
+      max-width: 252px;
+      margin: 0 auto;
+
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    margin: 0;
+  }
+}

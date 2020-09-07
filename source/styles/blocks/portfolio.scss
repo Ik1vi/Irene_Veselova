@@ -1,0 +1,136 @@
+.portfolio {
+  position: relative;
+  overflow: hidden;
+
+  max-width: 1230px;
+  width: auto;
+  padding: 0 30px;
+
+  @media (max-width: 1169px) {
+    overflow: hidden;
+
+		max-width: 1024px;
+    padding: 0 40px;
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 320px;
+    padding: 0 20px;
+  }
+
+  &__btn {
+  	position: absolute;
+  	display: block;
+  	top: 120px;
+  	z-index: 10;
+
+    &--previous {
+      left: 1px;
+    }
+
+    &--next {
+      right: 1px;
+
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: 1169px) {
+      display: none;
+    }
+  }
+
+  &__list {
+    position:relative;
+    @include flex-container(space-between, flex-start);
+
+    @include list-reset;
+
+    @media (max-width: 1169px) {
+      height: 374px;
+  		min-width: 1440px;
+  		max-width: none;
+    }
+
+    @media (max-width: 1023px) {
+      height: unset;
+      min-width: 1000px;
+    }
+  }
+
+  &__img {
+    max-height: 290px;
+
+    @media (max-width: 1169px) {
+      min-width: 455px;
+  		max-height: none;
+    }
+
+    @media (max-width: 1023px) {
+      min-width: auto;
+      max-width: 280px;
+    }
+  }
+
+  &__item {
+    min-width: 365px;
+    margin-right: 35px;
+
+    @media (max-width: 1169px) {
+  		min-width: 455px;
+      max-width: none;
+    }
+
+    @media (max-width: 1023px) {
+      min-width: unset;
+      max-width: 280px;
+    }
+
+    &:last-child {
+    	margin: 0;
+    }
+
+    &:nth-child(2) {
+      @media (max-width: 1023px) {
+        order: -1;
+      }
+    }
+  }
+
+  &__h3 {
+    max-width: 368px;
+  	margin-top: 25px;
+  	margin-bottom: 0;
+
+  	font-weight: 500;
+  	font-size: 20px;
+  	text-align: center;
+
+  	color: $text-secondary-color;
+
+    @media (max-width: 1169px) {
+      max-width: 455px;
+  		margin-top: 10px;
+
+  		font-size: 25px;
+  		font-weight: 500;
+    }
+
+    @media (max-width: 1023px) {
+      margin-top: 9px;
+
+      font-size: 18px;
+      text-align: left;
+      letter-spacing: 0;
+    }
+  }
+
+  &__pagination {
+    @media (max-width: 1169px) {
+      margin: 135px auto 0;
+    }
+
+    @media (max-width: 1023px) {
+      margin: 40px auto 0;
+    }
+  }
+}

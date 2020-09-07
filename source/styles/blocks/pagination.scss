@@ -1,0 +1,40 @@
+.pagination {
+	display: none;
+
+  @media (max-width: 1169px) {
+    @include flex-container(space-between);
+
+    max-width: 115px;
+		@include list-el-reset;
+
+    font-size: 18px;
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 65px;
+  }
+
+  &__dot {
+    @media (max-width: 1169px) {
+			@include button-reset;
+			
+  		display: block;
+
+  		padding: 10px;
+
+			@include background-image(url('../img/icons/nav-icon-sprite.svg'), left bottom);
+    }
+
+    @media (max-width: 1023px) {
+      padding: 6px;
+
+  		background-size: 40px;
+    }
+
+    &--active {
+      @media (max-width: 1169px) {
+    		background-position: left top;
+      }
+  	}
+	}
+}

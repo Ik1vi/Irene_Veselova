@@ -1,0 +1,20 @@
+.btn-menu {
+	display: none;
+
+	border: none;
+	background-color: unset;
+
+  @media (max-width: 1169px) {
+    display: block;
+
+		padding: 17px 24px;
+
+		@include background-image(url('../img/icons/nav-icon-sprite.svg'), right top);
+  }
+
+  @media (max-width: 1023px) {
+    padding: 10px 13px;
+
+		background-size: 39px;
+  }
+}
