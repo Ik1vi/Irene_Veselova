@@ -1,7 +1,15 @@
-$primary-color: #ff4e2e;
-
-$text-secondary-color: #8993ad;
+$primary-color:#e06060;
 
 $WHITE: #ffffff;
-$background-color: $WHITE;
-$background-secondary-color: #fbfbfb;
+$BLACK: #000000;
+
+$white-like: #f7f9f9;
+$dark-shades: #3a5d72;
+
+$light-accent-color:#ffded5;
+$dark-accent-color: #cb9b97;
+
+$text-primary-color: $dark-shades;
+$text-secondary-color: $light-accent-color;
+$background-color: $white-like;
+$background-secondary-color: $dark-shades;

@@ -4,7 +4,6 @@
 
   padding-bottom: 235px;
 
-	background-color: $background-secondary-color;
 	overflow: hidden;
 
   @media (max-width: 1169px) {
@@ -149,7 +148,7 @@
     font-size: 25px;
 
     font-weight: 400;
-    color: $text-secondary-color;
+    color: $text-primary-color;
 
     @media (max-width: 1169px) {
       margin-top: 10px;

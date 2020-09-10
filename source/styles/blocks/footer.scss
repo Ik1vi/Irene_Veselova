@@ -2,7 +2,7 @@
   &__container {
     @include flex-container(space-between);
 
-  	padding: 76px 0 74px;
+    padding: 76px 0 74px;
 
     @media (max-width: 1169px) {
       padding: 100px 40px 70px;
@@ -61,7 +61,7 @@
 
   	font-size: 16px;
   	text-align: center;
-  	background-color: #31293c;
+  	background-color: $background-secondary-color;
   	color: $WHITE;
 
     @media (max-width: 1169px) {

@@ -103,7 +103,7 @@
     	content: ' ';
     	padding: 40px;
 
-      @include background-image(url('../img/icons/cases-sprite.jpg'), left top);
+      @include background-image(url('../img/icons/cases-sprite.png'), left top);
 
       @media (max-width: 1169px) {
         left: 37%;

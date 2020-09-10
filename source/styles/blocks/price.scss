@@ -1,7 +1,7 @@
 .price {
 	position: relative;
 
-	background: linear-gradient(16deg, rgba(255,143,90,1) 19%, rgba(255,47,150,1) 80%);
+	background: linear-gradient(16deg, $dark-accent-color 19%, $primary-color 80%);
 
   &__wrapper {
   	padding: 74px 100px 82px 115px;
