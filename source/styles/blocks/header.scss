@@ -1,10 +1,11 @@
 .header {
 	position: relative;
-	z-index: 0;
+  z-index: 0;
+  overflow: hidden;
 
   padding-bottom: 235px;
 
-	overflow: hidden;
+  background: linear-gradient(90deg, $light-accent-color 38%, $white-like 38%);
 
   @media (max-width: 1169px) {
     padding-bottom: 230px;
