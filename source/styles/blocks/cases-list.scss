@@ -20,10 +20,12 @@
   }
 
   &__item {
-  	position: relative;
+    position: relative;
+    
+    width: 265px;
+    height: 200px;
 
   	padding-top: 91px;
-  	margin-right: 58px;
 
     @media (max-width: 1169px) {
       min-width: 310px;
