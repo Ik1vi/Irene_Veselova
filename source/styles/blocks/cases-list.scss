@@ -1,5 +1,5 @@
 .cases-list {
-  @include flex-container(center, flex-end);
+  @include flex-container(space-between, flex-end);
 
 	min-width: 457px;
   @include list-el-reset;
@@ -25,61 +25,9 @@
     width: 265px;
     height: 200px;
 
-  	padding-top: 91px;
-
-    @media (max-width: 1169px) {
-      min-width: 310px;
-  		margin-bottom: 79px;
-  		margin-right: 0;
-    }
-
-    @media (max-width: 1023px) {
-      min-width: auto;
-  		padding-top: 73px;
-  		margin: 0 auto 53px;
-
-  		text-align: center;
-    }
-
-    &:nth-child(1) {
-      @media (max-width: 1023px) {
-    		padding-top: 69px;
-    		margin-bottom: 50px;
-    	}
-    }
-
-  	&:nth-child(3) {
-      @media (max-width: 1023px) {
-    		padding-top: 70px;
-        margin-bottom: 49px;
-    	}
-    }
-
-    &:nth-child(4) {
-      margin-right: 0;
-
-      @media (max-width: 1023px) {
-        margin: 0 auto 49px;
-      }
-    }
-
-    &:last-child {
-      margin-right: 0;
-
-      @media (max-width: 1023px) {
-        margin: 0 auto;
-      }
-    }
-
-    &:nth-child(5) {
-      margin-top: 30px;
-    }
-
-    &:nth-last-child(-n+2) {
-      @media (max-width: 1169px) {
-        margin-bottom: 0;
-      }
-  	}
+    padding-top: 105px;
+    
+    background-color: $white-like;
   }
 
   &__p {
@@ -87,93 +35,33 @@
   	margin-top: 0;
   	margin-bottom: 0;
 
-  	font-size: 20px;
+  	font-size: 16px;
   	font-weight: 400;
   	text-align: center;
 
-  	color: $text-secondary-color;
-
-    @media (max-width: 1023px) {
-      font-size: 16px;
-    }
+  	color: $dark-shades;
 
     &::before {
     	position: absolute;
-    	left: 34%;
-    	top: 0;
+    	left: 25%;
+    	top: -25%;
 
     	content: ' ';
-    	padding: 40px;
+    	padding: 165px;
 
-      @include background-image(url('../img/icons/cases-sprite.png'), left top);
-
-      @media (max-width: 1169px) {
-        left: 37%;
-      }
-
-      @media (max-width: 1023px) {
-        left: 35%;
-
-    		padding: 29px 31px;
-
-    		background-size: 122px;
-      }
+      @include background-image(url('../img/icons/tools.png'));
     }
-  }
-
-  &__item:nth-child(2) &__p{
-    max-width: 275px;
-  }
-
-  &__item:nth-child(3) &__p{
-    max-width: 210px;
-  }
-
-  &__item:nth-child(4) &__p{
-    max-width: 250px;
   }
 
   &__item:nth-child(2) &__p::before{
-  	padding: 37px 40px;
-
-  	background-position: left bottom;
-
-    @media (max-width: 1023px) {
-      padding: 29px 31px;
-    }
+    @include background-image(url('../img/icons/responsive.png'));
   }
 
   &__item:nth-child(3) &__p::before {
-  	left: 28%;
-
-  	padding: 38px 40px;
-
-  	background-position: right top;
-
-    @media (max-width: 1169px) {
-      left: 37%;
-    }
-
-    @media (max-width: 1023px) {
-      left: 31%;
-
-  		padding: 30px;
-
-  		background-size: 130px;
-    }
+    @include background-image(url('../img/icons/programming.png'));
   }
 
   &__item:nth-child(4) &__p::before {
-  	padding: 37px 38.7px;
-
-  	background-position: right bottom;
-
-    @media (max-width: 1023px) {
-      left: 33%;
-
-  		padding: 31px;
-
-  		background-size: 130px;
-    }
+    @include background-image(url('../img/icons/coding.png'));
   }
 }
