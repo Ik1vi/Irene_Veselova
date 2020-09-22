@@ -109,6 +109,7 @@ gulp.task('build', gulp.series([
   'images',
   'style',
   'html',
+  'webp',
 ]));
 
 gulp.task('serve', function () {

@@ -3,7 +3,7 @@
   z-index: 0;
   overflow: hidden;
 
-  padding-bottom: 215px;
+  padding-bottom: 201px;
 
   background: linear-gradient(90deg, $light-accent-color 42%, $white-like 42%);
 
@@ -21,7 +21,7 @@
   &__bar {
     @include flex-container(space-between, center);
 
-  	padding-top: 25px;
+  	padding-top: 23px;
 
     @media (max-width: 1169px) {
       padding-top: 29px;
@@ -100,8 +100,10 @@
 
   &__portrait {
     position: absolute;
-    top: 130px;
-    left: 850px;
+    top: 140px;
+    left: 668px;
+
+    max-width: 500px;
 
     @media (max-width: 1169px) {
       left: 535px;
@@ -117,11 +119,23 @@
       width: 225px;
       max-width: unset;
     }
+
+    &--left {
+      position: absolute;
+      top: 227px;
+      left: 475px;
+    }
+  
+    &--right {
+      position: absolute;
+      top: 200px;
+      left: 850px;
+    }
   }
 
   &__title {
   	max-width: 800px;
-  	margin: 160px 0 40px;
+  	margin: 158px 0 40px;
 
     font-size: 80px;
     font-weight: 900;

@@ -22,12 +22,16 @@
   &__item {
     position: relative;
     
-    width: 265px;
-    height: 200px;
+    width: 270px;
+    height: 195px;
 
-    padding-top: 105px;
+    padding: 105px 20px 20px;
     
     background-color: $white-like;
+
+    -webkit-box-shadow: 3px 4px 20px 6px rgba(0,0,0,0.26);
+    -moz-box-shadow: 3px 4px 20px 6px rgba(0,0,0,0.26);
+    box-shadow: 3px 4px 20px 6px rgba(0,0,0,0.26);
   }
 
   &__p {
@@ -37,7 +41,8 @@
 
   	font-size: 16px;
   	font-weight: 400;
-  	text-align: center;
+    text-align: center;
+    line-height: 1.8;
 
   	color: $dark-shades;
 
@@ -47,7 +52,13 @@
     	top: -25%;
 
     	content: ' ';
-    	padding: 165px;
+      padding: 66px;
+      
+      border-radius: 50%;
+
+      -webkit-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.23);
+      -moz-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.23);
+      box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.23);
 
       @include background-image(url('../img/icons/tools.png'));
     }

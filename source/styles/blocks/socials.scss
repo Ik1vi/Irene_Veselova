@@ -1,7 +1,7 @@
 .socials {
   @include flex-container(space-between, flex-end);
 
-	max-width: 195px;
+	max-width: 250px;
   @include list-el-reset();
 
   @media (max-width: 1169px) {
