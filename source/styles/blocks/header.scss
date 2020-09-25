@@ -9,13 +9,15 @@
 
   @media (max-width: 1169px) {
     padding-bottom: 230px;
+
+    background: linear-gradient(90deg, $light-accent-color 50%, $white-like 50%);
   }
 
   @media (max-width: 1023px) {
-    padding-bottom: 0;
+    padding-bottom: 35px;
 
     text-align: center;
-    background-color: $background-color;
+    background: linear-gradient($light-accent-color 58%, $white-like 58%);
   }
 
   &__bar {
@@ -91,7 +93,7 @@
 
     @media (max-width: 1023px) {
       max-height: 467px;
-  		padding-top: 140px;
+      padding-top: 110px;
 
   		background-size: 463px;
   		background-position: 38% 173px;
@@ -106,30 +108,55 @@
     max-width: 500px;
 
     @media (max-width: 1169px) {
-      left: 535px;
+      left: 570px;
 
       max-width: 470px;
     }
 
     @media (max-width: 1023px) {
-      position: relative;
-      left: unset;
-      top: unset;
-
-      width: 225px;
-      max-width: unset;
+      display: none;
     }
 
     &--left {
       position: absolute;
       top: 227px;
       left: 475px;
+
+      @media (max-width: 1169px) {
+        left: 440px;
+
+        max-width: 400px;
+      }
+  
+      @media (max-width: 1023px) {
+        display: none;
+      }
     }
   
     &--right {
       position: absolute;
       top: 200px;
       left: 850px;
+
+      @media (max-width: 1169px) {
+        left: 725px;
+
+        max-width: 330px;
+      }
+  
+      @media (max-width: 1023px) {
+        display: none;
+      }
+    }
+
+    &--original {
+      display: none;
+
+      @media (max-width: 1023px) {
+        display: block;
+        margin: 0 auto;
+        max-width: 270px;
+      }
     }
   }
 

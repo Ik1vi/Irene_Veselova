@@ -9,7 +9,8 @@
   }
 
   @media (max-width: 1023px) {
-    max-width: 197px;
+    max-width: unset;
+    min-width: 100%;
   }
 
   &__item {

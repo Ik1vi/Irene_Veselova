@@ -3,6 +3,7 @@
   &--vertical {
     @include flex-container(space-between);
     flex-direction: column;
+    align-self: flex-start;
 
     min-width: 220px;
     max-width: 40%;

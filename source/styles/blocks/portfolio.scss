@@ -73,7 +73,7 @@
 
   &__item {
     min-width: 365px;
-    margin-right: 35px;
+    margin: 0;
 
     @media (max-width: 1169px) {
   		min-width: 455px;

@@ -2,7 +2,7 @@
   &__container {
     @include flex-container(space-between);
 
-    padding: 76px 0 74px;
+    padding: 76px 0 72px;
 
     @media (max-width: 1169px) {
       padding: 100px 40px 70px;
@@ -40,7 +40,7 @@
   }
 
   &__call-btn {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     @media (max-width: 1023px) {
       margin-bottom: 40px;

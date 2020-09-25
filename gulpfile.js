@@ -108,6 +108,7 @@ gulp.task('build', gulp.series([
   'fonts',
   'images',
   'style',
+  'scripts',
   'html',
   'webp',
 ]));

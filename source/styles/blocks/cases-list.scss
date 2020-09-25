@@ -32,6 +32,30 @@
     -webkit-box-shadow: 3px 4px 20px 6px rgba(0,0,0,0.26);
     -moz-box-shadow: 3px 4px 20px 6px rgba(0,0,0,0.26);
     box-shadow: 3px 4px 20px 6px rgba(0,0,0,0.26);
+
+    @media (max-width: 1169px) {
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 1023px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__item:nth-child(3) {
+    @media (max-width: 1169px) {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 1023px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__item:last-child {
+    @media (max-width: 1169px) {
+      margin-bottom: 0;
+    }
   }
 
   &__p {
