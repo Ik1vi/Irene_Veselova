@@ -58,8 +58,6 @@
   }
 
   &__img {
-    max-height: 290px;
-
     @media (max-width: 1169px) {
       min-width: 455px;
   		max-height: none;
@@ -72,7 +70,7 @@
   }
 
   &__item {
-    min-width: 365px;
+    max-width: 31.5%;
     margin: 0;
 
     @media (max-width: 1169px) {
@@ -97,8 +95,7 @@
   }
 
   &__h3 {
-    max-width: 368px;
-  	margin-top: 25px;
+  	margin-top: 23px;
   	margin-bottom: 0;
 
   	font-weight: 500;

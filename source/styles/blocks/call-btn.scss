@@ -29,12 +29,12 @@
 
   &--round {
     @media (max-width: 1023px) {
-      padding: 13px;
+      padding: 12px;
 
       font-size: 11px;
       border-radius: 50%;
 
-			@include background-image(url('../img/icons/icon-phone.png'), center);
+			@include background-image(url('../img/icons/icon-phone.png'), 5px 5px);
 			background-size: 13px;
     }
   }
