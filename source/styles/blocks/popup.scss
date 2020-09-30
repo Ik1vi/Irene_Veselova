@@ -1,0 +1,28 @@
+.popup {
+    width: 540px;
+    height: 400px;
+    padding: 30px 55px;
+    
+    background-color: $dark-shades;
+
+    &__btn {
+        margin: 30px auto 0;
+    }
+
+    &__label {
+        width: 100%;
+
+        color: $white-like;
+        line-height: 1.7;
+    }
+
+    &__text {
+        width: 100%;
+        height: 45px;
+        padding: 2px 5px;
+        margin: 0;
+        margin-bottom: 8px;
+
+        border: 0;
+    }
+}

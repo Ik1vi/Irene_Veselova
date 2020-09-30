@@ -7,7 +7,6 @@
 
     min-width: 220px;
     max-width: 40%;
-    max-height: 150px;
     @include list-el-reset;
 
     @media (max-width: 1169px) {
@@ -19,13 +18,17 @@
 
   		font-size: 16px;
     }
+
+    .page-nav__item {
+      margin-right: 0;
+    }
   }
 
   &__list {
-    @include flex-container(space-between);
+    @include flex-container(flex-start);
 
     min-width: 278px;
-    max-width: 300px;
+    max-width: 650px;
     @include list-reset;
 
     @media (max-width: 1169px) {
@@ -34,7 +37,12 @@
   }
 
   &__item {
-  	min-width: 54px;
+    min-width: 54px;
+    margin-right: 27px;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 
   &__link {

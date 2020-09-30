@@ -41,7 +41,10 @@
 
   &__list {
     position:relative;
-    @include flex-container(space-between, flex-start);
+    overflow: hidden;
+
+    @include flex-container(flex-start, flex-start);
+    flex-wrap: nowrap;
 
     @include list-reset;
 
@@ -70,12 +73,14 @@
   }
 
   &__item {
-    max-width: 31.5%;
-    margin: 0;
+    min-width: 370px;
+    max-width: 370px;
+    margin: 0 30px 0 0;
 
     @media (max-width: 1169px) {
   		min-width: 455px;
       max-width: none;
+      margin-right: 37px;
     }
 
     @media (max-width: 1023px) {

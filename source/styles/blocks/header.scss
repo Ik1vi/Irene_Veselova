@@ -103,12 +103,12 @@
   &__portrait {
     position: absolute;
     top: 140px;
-    left: 668px;
+    left: 53%;
 
     max-width: 500px;
 
     @media (max-width: 1169px) {
-      left: 540px;
+      left: 53%;
 
       max-width: 470px;
     }
@@ -120,10 +120,10 @@
     &--left {
       position: absolute;
       top: 227px;
-      left: 475px;
+      left: 37%;
 
       @media (max-width: 1169px) {
-        left: 415px;
+        left: 40%;
 
         max-width: 400px;
       }
@@ -136,10 +136,10 @@
     &--right {
       position: absolute;
       top: 200px;
-      left: 850px;
+      left: 67%;
 
       @media (max-width: 1169px) {
-        left: 675px;
+        left: 66%;
 
         max-width: 330px;
       }
@@ -170,7 +170,7 @@
     @media (max-width: 1169px) {
       margin-top: 229px;
 
-  		font-size: 53px;
+  		font-size: 54px;
     }
 
     @media (max-width: 1023px) {
