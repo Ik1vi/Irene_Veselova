@@ -1,8 +1,7 @@
 .btn-menu {
-	display: none;
-
-	border: none;
-	background-color: unset;
+  display: none;
+  
+  @include button-reset;
 
   @media (max-width: 1169px) {
     display: block;

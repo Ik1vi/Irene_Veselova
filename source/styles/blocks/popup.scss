@@ -1,12 +1,35 @@
 .popup {
+    position: relative;
+
     width: 540px;
-    height: 400px;
     padding: 30px 55px;
     
-    background-color: $dark-shades;
+    background-color: rgba(58,93,114,0.9);
+
+    @media (max-width: 1023px) {
+        width: 100%;
+        padding: 20px;
+    }
+
+    &__btn-close {
+        position:absolute;
+        top:-40px;
+        right:0;
+    }
+
+    &__form {
+        @media (max-width: 1023px) {
+            max-width: 280px;
+            margin: 0 auto;
+        }
+    }
 
     &__btn {
         margin: 30px auto 0;
+
+        @media (max-width: 1023px) {
+            margin: 25px auto 0;
+        }
     }
 
     &__label {
@@ -14,15 +37,24 @@
 
         color: $white-like;
         line-height: 1.7;
+
+        @media (max-width: 1023px) {
+            font-size: 14px;
+        }
     }
 
     &__text {
         width: 100%;
         height: 45px;
-        padding: 2px 5px;
+        padding: 5px;
         margin: 0;
         margin-bottom: 8px;
 
         border: 0;
+
+        @media (max-width: 1023px) {
+            height: 35px;
+            margin-bottom: 5px;
+        }
     }
 }

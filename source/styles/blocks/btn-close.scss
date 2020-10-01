@@ -1,0 +1,12 @@
+.btn-close {
+    @include button-reset;
+    
+    padding: 14px;
+
+    @include background-image(url('../img/icons/nav-icon-sprite.png'), right bottom);
+    background-size: 50px;
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
+}
