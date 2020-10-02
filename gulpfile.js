@@ -124,6 +124,7 @@ gulp.task('serve', function () {
 gulp.task('watch', function () {
   gulp.watch('source/styles/**/*.scss', gulp.series('style'));
   gulp.watch("source/**/*.html", gulp.series('html'));
+  gulp.watch("source/**/*.js", gulp.series('scripts'));
 });
 
 gulp.task('dev',

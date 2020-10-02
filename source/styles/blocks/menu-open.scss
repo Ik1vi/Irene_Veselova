@@ -33,30 +33,30 @@
 
             background-color: rgba(251,251,251,0.7);
         }
-    }
 
-    .page-nav__list {
-        display: block;
-
-        margin: 0 auto;
-
-        text-align: left;
-
-        @media (max-width: 1169px) {
-            max-width: 1024px;
-            padding: 40px;
+        &__list {
+            display: block;
+    
+            margin: 0 auto;
+    
+            text-align: left;
+    
+            @media (max-width: 1169px) {
+                max-width: 1024px;
+                padding: 40px 100px;
+            }
+    
+            @media (max-width: 1023px) {
+                max-width: 320px;
+                padding: 20px;
+            }
         }
-
-        @media (max-width: 1023px) {
-            max-width: 320px;
-            padding: 20px;
+    
+        &__item {
+            margin-right: 0;
+            margin-bottom: 20px;
+    
+            font-size: 18px;
         }
-    }
-
-    .page-nav__item {
-        margin-right: 0;
-        margin-bottom: 20px;
-
-        font-size: 18px;
     }
 }

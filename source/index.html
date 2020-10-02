@@ -12,17 +12,17 @@
 
 		Предварительная загрузка шрифта – ставит шрифты в приоритет загрузки браузером.
 		Помогает избежать неоправданную задержку рендеринга текста, FOIT и минимализировать FOUT -->
-		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font"/> <!-- Все браузеры, которые поддерживают preload, также поддерживают WOFF2 -->
-		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-500.woff2" as="font"/>
-		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font"/>
-		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-900.woff2" as="font"/>
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous"/> <!-- Все браузеры, которые поддерживают preload, также поддерживают WOFF2 -->
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-500.woff2" as="font" crossorigin="anonymous" />
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font" crossorigin="anonymous" />
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-900.woff2" as="font" crossorigin="anonymous" />
 
 		<link rel="stylesheet" type="text/css" href="styles/style.min.css"/>
 	</head>
 
 	<body class="js-body no-js">
-		<div class="popup-container">
-			<div class="popup-container__popup popup">
+		<div class="popup-container js-popup-container">
+			<div class="popup-container__popup popup js-popup">
 				<button class="popup__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
 
 				<form class="popup__form js-form" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" method="post" target="_blank">
@@ -40,10 +40,10 @@
 			</div>
 		</div>
 
-		<header class="header">
+		<header class="header js-header">
 			<div class= "fixed-container">
 				<div class="header__bar">
-					<button class="header__btn-menu btn-menu" type="button" aria-label="Показать меню"></button>
+					<button class="header__btn-menu btn-menu js-btn-menu" type="button" aria-label="Показать меню"></button>
 
 					<nav class="header__menu page-nav">
 						<ul class="page-nav__list">
@@ -62,7 +62,7 @@
 					<div class="header__phone-contacts">
 						<a class="header__phone" href="tel:+7(915)486-41-82">+7 (915) 486-41-82</a>
 
-						<button class="btn call-btn header__call-btn js-call-btn" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+						<button class="btn call-btn header__call-btn js-call-btn js-form-call-btn" type="button" aria-label="Заказать звонок">Заказать звонок</button>
 					</div>
 				</div>
 
@@ -96,7 +96,7 @@
 					<span class="header__profession">Frontend-разработчик и дизайнер</span>
 				</h1>
 
-				<a class="btn btn--primary header__btn" href="#">Узнать больше</a>
+				<a class="btn btn--primary header__btn js-form-call-btn" href="#">Узнать больше</a>
 			</div>
 		</header>
 
@@ -124,7 +124,7 @@
 						</li>
 					</ul>
 
-					<a class="btn btn--primary page-section__btn" href="#">Узнать стоимость</a>
+					<a class="btn btn--primary page-section__btn js-form-call-btn" href="#">Узнать стоимость</a>
 				</div>
 			</section>
 
@@ -210,7 +210,7 @@
 					</ul>
 				</div>
 
-				<button class="btn btn--primary page-section__btn" type="button" >Заказать проект</button>
+				<button class="btn btn--primary page-section__btn js-form-call-btn" type="button" >Заказать проект</button>
 			</section>
 
 			<section class="page__price price">
@@ -256,7 +256,7 @@
 				</address>
 
 				<div class="footer__media-container">
-					<button class="btn call-btn call-btn--wide footer__call-btn" type="button">Заказать звонок</button>
+					<button class="btn call-btn call-btn--wide footer__call-btn js-form-call-btn" type="button">Заказать звонок</button>
 
 					<ul class="footer__social-list socials">
 						<li class="socials__item">
