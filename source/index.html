@@ -23,19 +23,19 @@
 	<body class="js-body no-js">
 		<div class="popup-container js-popup-container">
 			<div class="popup-container__popup popup js-popup">
-				<button class="popup__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
+				<button class="popup__btn-close btn-close js-btn-close" type="button" aria-label="Закрыть форму"></button>
 
 				<form class="popup__form js-form" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" method="post" target="_blank">
 					<label class="popup__label" for="popup-name">Ваше имя</label>
 					<input id="popup-name" class="popup__text" type="text" name="popup-name" maxlength="25" autofocus required/>
 					
 					<label class="popup__label" for="popup-tel">Ваш телефон</label>
-					<input id="popup-tel" class="popup__text" type="tel" name="popup-tel" maxlength="25" autofocus required/>
+					<input id="popup-tel" class="popup__text js-tel-input" type="tel" name="popup-tel" maxlength="25" autofocus required/>
 					
 					<label class="popup__label" for="popup-mail">Ваш e-mail</label>
 					<input id="popup-mail" class="popup__text" type="email" name="popup-mail" maxlength="25" autofocus required/>
 
-					<input class="btn btn--primary popup__btn" type="submit" href="#" value="Отправить"/>
+					<input class="btn btn--primary popup__btn js-popup__btn" type="submit" href="#" value="Отправить"/>
 				</form>
 			</div>
 		</div>
@@ -48,13 +48,13 @@
 					<nav class="header__menu page-nav">
 						<ul class="page-nav__list">
 							<li class="page-nav__item">
-								<a class="page-nav__link" href="#">Услуги</a>
+								<a class="page-nav__link js-nav-link" href="#cases">Услуги</a>
 							</li>
 							<li class="page-nav__item">
-								<a class="page-nav__link page-nav__link--active" href="#">Портфолио</a>
+								<a class="page-nav__link page-nav__link--active js-nav-link" href="#portfolio">Портфолио</a>
 							</li>
 							<li class="page-nav__item">
-								<a class="page-nav__link" href="#">Стоимость</a>
+								<a class="page-nav__link js-nav-link" href="#price">Стоимость</a>
 							</li>
 						</ul>
 					</nav>
@@ -101,7 +101,7 @@
 		</header>
 
 		<main class="page">
-			<section class="page__section page-section page-section--secondary-background">
+			<section id="cases" class="page__section page-section page-section--secondary-background">
 				<div class="fixed-container">
 					<h2 class="page-section__title">Что я делаю</h2>
 
@@ -128,7 +128,7 @@
 				</div>
 			</section>
 
-			<section class="page__section page-section">
+			<section id="portfolio" class="page__section page-section">
 				<h2 class="page-section__title">Примеры моих работ</h2>
 
 				<div class= "fixed-container page-section__portfolio portfolio">
@@ -213,7 +213,7 @@
 				<button class="btn btn--primary page-section__btn js-form-call-btn" type="button" >Заказать проект</button>
 			</section>
 
-			<section class="page__price price">
+			<section id="price" class="page__price price">
 				<h2 class="visually-hidden">Оперативная верстка любой сложности</h2>
 
 				<div class="fixed-container price__wrapper">
@@ -233,13 +233,13 @@
 			<div class="fixed-container footer__container">
 				<ul class="footer__page-nav page-nav page-nav--vertical">
 					<li class="page-nav__item">
-						<a class="page-nav__link page-nav__link--grey" href="#">Услуги</a>
+						<a class="page-nav__link page-nav__link--grey" href="#cases">Услуги</a>
 					</li>
 					<li class="page-nav__item">
-						<a class="page-nav__link page-nav__link--grey" href="#">Портфолио</a>
+						<a class="page-nav__link page-nav__link--grey" href="#portfolio">Портфолио</a>
 					</li>
 					<li class="page-nav__item">
-						<a class="page-nav__link page-nav__link--grey" href="#">Стоимость</a>
+						<a class="page-nav__link page-nav__link--grey" href="#price">Стоимость</a>
 					</li>
 				</ul>
 
