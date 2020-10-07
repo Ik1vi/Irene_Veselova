@@ -91,8 +91,13 @@ gulp.task('clean', function () {
 
 gulp.task('fonts', function () {
   return gulp.src('source/fonts/**/*.+(woff|woff2)')
-    .pipe(gulp.dest('build/fonts'))
-})
+    .pipe(gulp.dest('build/fonts'));
+});
+
+gulp.task('favicon', function () {
+  return gulp.src('source/favicon.png')
+    .pipe(gulp.dest('build'))
+});
 
 gulp.task('build', gulp.series([
   'clean',
@@ -101,6 +106,7 @@ gulp.task('build', gulp.series([
   'style',
   'scripts',
   'html',
+  'favicon',
   'webp',
 ]));
 
