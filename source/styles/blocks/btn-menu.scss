@@ -21,7 +21,7 @@
 
 		padding: 17px 24px;
 
-    @include background-image(url('../img/icons/nav-icon-sprite.png'), right top);
+    @include background-image(url('../img/icons/nav-icon-sprite.svg'), right top);
     
     background-size: 70px;
   }

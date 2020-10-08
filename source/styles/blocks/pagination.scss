@@ -40,7 +40,7 @@
 
   		padding: 10px;
 
-      @include background-image(url('../img/icons/nav-icon-sprite.png'), left bottom);
+      @include background-image(url('../img/icons/nav-icon-sprite.svg'), left bottom);
       background-size: 70px;
     }
 

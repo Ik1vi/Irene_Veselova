@@ -3,7 +3,7 @@
     
     padding: 14px;
 
-    @include background-image(url('../img/icons/nav-icon-sprite.png'), right bottom);
+    @include background-image(url('../img/icons/nav-icon-sprite.svg'), right bottom);
     background-size: 50px;
 
     &:focus {

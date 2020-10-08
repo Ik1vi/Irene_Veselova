@@ -1,6 +1,6 @@
 .menu-open{
     .btn-menu {
-        @include background-image(url('../img/icons/nav-icon-sprite.png'), right bottom);
+        @include background-image(url('../img/icons/nav-icon-sprite.svg'), right bottom);
         
         @media (max-width: 1169px) {
             padding: 20px;
