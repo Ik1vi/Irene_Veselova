@@ -1,7 +1,20 @@
 .btn-menu {
   display: none;
+  border: 0;
   
   @include button-reset;
+
+  &:focus {
+    @include focus-el;
+  }
+
+  &:hover {
+    @include hover-el;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: 1169px) {
     display: block;
@@ -14,7 +27,7 @@
   }
 
   @media (max-width: 1023px) {
-    padding: 10px 13px;
+    padding: 10px 14px;
 
 		background-size: 39px;
   }

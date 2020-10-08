@@ -5,18 +5,18 @@ for (let i=0, length = formBtnsCollection.length; i < length; i++) {
 		headerEl.classList.remove('menu-open');
 		bodyEl.classList.remove('js-fixed');
 
-		popupContainer.style.display = 'block';
+		popupContainerEl.style.display = 'block';
 	});
 }
 
 btnPopupCloseEl.addEventListener('click', function() {
-	popupContainer.style.display = 'none';
+	popupContainerEl.style.display = 'none';
 	formEl.reset();
 });
 
 document.addEventListener('mousedown', function(e) {
 	if(!e.target.closest('.js-popup')){
-		popupContainer.style.display = 'none';
+		popupContainerEl.style.display = 'none';
 		formEl.reset();
     }
 });
@@ -56,9 +56,9 @@ window.addEventListener('DOMContentLoaded', function() {
 		} else setCursorPosition(this.value.length, this)
 	};
 
-	telInput.addEventListener('input', mask, false);
-	telInput.addEventListener('focus', mask, false);
-	telInput.addEventListener('blur', mask, false)
+	telInputEl.addEventListener('input', mask, false);
+	telInputEl.addEventListener('focus', mask, false);
+	telInputEl.addEventListener('blur', mask, false)
 });
 
 let formSubmitHandler = function() {

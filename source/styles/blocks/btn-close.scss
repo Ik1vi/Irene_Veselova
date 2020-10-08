@@ -6,6 +6,18 @@
     @include background-image(url('../img/icons/nav-icon-sprite.png'), right bottom);
     background-size: 50px;
 
+    &:focus {
+        @include focus-el;
+      }
+    
+      &:hover {
+        @include hover-el;
+      }
+  
+      &:active {
+        opacity: 0.5;
+      }
+
     @media (max-width: 1023px) {
         display: none;
     }

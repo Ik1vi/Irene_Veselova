@@ -33,5 +33,36 @@
   font: inherit;
   color: inherit;
   background-color: transparent;
+  outline: none;
   cursor: pointer; /*отображаем курсор*/
+}
+
+@mixin focus-el { /*сбрасываем стили кнопки*/
+  -webkit-box-shadow: 0px 0px 0px 5px $focus-accent-color;
+  -moz-box-shadow: 0px 0px 0px 5px $focus-accent-color;
+  box-shadow: 0px 0px 0px 5px $focus-accent-color;
+}
+
+@mixin hover-el { /*сбрасываем стили кнопки*/
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(224,96,96,0.25);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(224,96,96,0.25);
+  box-shadow: 0px 0px 0px 5px rgba(224,96,96,0.25);
+}
+
+@mixin link-highlights {
+  outline: none;
+
+  &:focus {
+    @include focus-el;
+    background-color: $focus-accent-color;
+  }
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &:active {
+    text-decoration: underline;
+    color: $primary-color;
+  }
 }

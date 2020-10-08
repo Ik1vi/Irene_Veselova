@@ -20,4 +20,11 @@ btnMenuEl.addEventListener('click', function(ev) {
 	} else {
 		bodyEl.classList.remove('js-fixed');
 	}
+
+	pageNavEl.addEventListener('mousedown', function(e) {
+		if(!e.target.closest('.js-nav-list') ){
+			headerEl.classList.remove('menu-open');
+			bodyEl.classList.remove('js-fixed');
+		}
+	});
 });

@@ -18,7 +18,7 @@
   }
 
   &__item {
-  	margin-bottom: 20px;
+    margin-bottom: 20px;
 
     @media (max-width: 1023px) {
       margin-bottom: 13px;
@@ -33,7 +33,9 @@
   	padding-left: 40px;
 
   	line-height: 1.6;
-  	font-size: 25px;
+    font-size: 25px;
+    
+    @include link-highlights;
 
 		@include background-image(none, left 40%);
 

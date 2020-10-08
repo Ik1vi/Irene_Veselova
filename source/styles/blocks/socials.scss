@@ -13,33 +13,42 @@
     min-width: 100%;
   }
 
-  &__item {
-  	padding: 8px 0;
-  }
-
   &__link {
-  	display: block;
+    display: block;
+    
+    padding: 19px;
 
-  	padding: 10px 17px;
+    background-image: url('../img/icons/social-media-sprite.svg');
+    background-repeat: no-repeat;
+    background-size: 75px;
+    outline: none;
 
-  	background-image: url('../img/icons/social-media-sprite.png');
+    &:hover {
+      background-image: url('../img/icons/social-media-sprite-focus.svg');
+    }
+
+    &:focus {
+      border-radius: 90px;
+      background-color: $focus-accent-color;
+      @include focus-el;
+    }
+
+    &:active {
+      background-image: url('../img/icons/social-media-sprite.svg');
+      
+    }
+
   }
 
   &__item:nth-child(2) &__link {
-  	padding: 15px 17px;
-
   	background-position: 0 bottom;
   }
 
   &__item:nth-child(3) &__link {
-  	padding: 12px 15px;
-
   	background-position: right 0;
   }
 
   &__item:nth-child(4) &__link {
-  	padding: 14px 18px;
-
   	background-position: right bottom;
   }
 }

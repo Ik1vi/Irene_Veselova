@@ -51,6 +51,15 @@
         margin-bottom: 8px;
 
         border: 0;
+        outline: 0;
+
+        &:focus {
+            background-color: $light-accent-color;
+          }
+        
+          &:hover {
+            @include hover-el;
+          }
 
         @media (max-width: 1023px) {
             height: 35px;

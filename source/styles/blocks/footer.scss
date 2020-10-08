@@ -40,10 +40,10 @@
   }
 
   &__call-btn {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     @media (max-width: 1023px) {
-      margin-bottom: 40px;
+      margin-bottom: 47px;
     }
 
     &:last-child {
@@ -65,7 +65,7 @@
   	color: $WHITE;
 
     @media (max-width: 1169px) {
-      padding: 26px 0 29px;
+      padding: 27px 0 29px;
     }
 
     @media (max-width: 1023px) {

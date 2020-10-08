@@ -3,14 +3,15 @@ const headerEl = document.querySelector('.js-header');
 
 const btnMenuEl = document.querySelector('.js-btn-menu');
 const navLinksCollection = document.querySelectorAll('.js-nav-link');
+const pageNavEl = document.querySelector('.js-page-nav');
 
 const btnHeaderPhoneEl = document.querySelector('.js-call-btn');
 
 const formBtnsCollection = document.querySelectorAll('.js-form-call-btn');
 
-const popupContainer = document.querySelector('.js-popup-container');
+const popupContainerEl = document.querySelector('.js-popup-container');
 const formEl = document.querySelector('.js-form');
-const telInput = document.querySelector('.js-tel-input');
+const telInputEl = document.querySelector('.js-tel-input');
 
 const btnPopupCloseEl = document.querySelector('.js-btn-close');
 

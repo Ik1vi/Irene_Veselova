@@ -1,7 +1,21 @@
 .call-btn {
 	padding: 11px 40px 10px;
 
-	border-color: #f82370;
+	border-color: $primary-color;
+
+	&:focus {
+		@include focus-el;
+	}
+
+	&:hover {
+		@include hover-el;
+	}
+
+	&:active {
+		background-color: $primary-color;
+		
+		color: $white-like;
+	}
 
   @media (max-width: 1169px) {
     max-width: 250px;

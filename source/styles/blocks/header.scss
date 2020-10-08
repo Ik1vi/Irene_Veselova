@@ -52,10 +52,11 @@
   }
 
   &__phone {
-    min-width: 240px;
 
   	font-weight: 700;
     font-size: 25px;
+
+    @include link-highlights;
 
     @media (max-width: 1169px) {
       font-size: 25px;

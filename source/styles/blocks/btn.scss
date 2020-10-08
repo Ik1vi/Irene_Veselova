@@ -17,6 +17,18 @@
     color: $WHITE;
     border: none;
 
+    &:focus {
+      @include focus-el;
+    }
+  
+    &:hover {
+      @include hover-el;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
     @media (max-width: 1169px) {
       min-width: 320px;
   		max-width: 34%;

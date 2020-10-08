@@ -9,16 +9,25 @@ for (let i=0, length = paginationDotCollection.length; i < length; i++) {
 		paginationDotCollection[i].classList.add('pagination__dot--active');
 
 		if(i==0) {
+			portfolioCollection[0].style.display = 'block';
+			portfolioCollection[1].style.display = 'block';
+			portfolioCollection[2].style.display = 'none';
+
 			portfolioCollection[0].style.order = '-2';
 			portfolioCollection[1].style.order = '-1';
-			portfolioCollection[2].style.order = '1';
 		} else if(i==1) {
-			portfolioCollection[0].style.order = '1';
+			portfolioCollection[0].style.display = 'none';
+			portfolioCollection[1].style.display = 'block';
+			portfolioCollection[2].style.display = 'block';
+
 			portfolioCollection[1].style.order = '-2';
 			portfolioCollection[2].style.order = '-1';
 		} else {
+			portfolioCollection[0].style.display = 'block';
+			portfolioCollection[1].style.display = 'none';
+			portfolioCollection[2].style.display = 'block';
+
 			portfolioCollection[0].style.order = '-1';
-			portfolioCollection[1].style.order = '1';
 			portfolioCollection[2].style.order = '-2';
 		}
 	});

@@ -46,10 +46,9 @@
   }
 
   &__link {
-    &--active {
-    	text-decoration: underline;
-      color: #fc557c;
-    }
+    outline: none;
+
+    @include link-highlights;
 
     &--grey {
     	font-size: 18px;
