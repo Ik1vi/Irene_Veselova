@@ -53,6 +53,10 @@
     @media (max-width: 1169px) {
       margin-top: 0;
     }
+
+    @media (max-width: 1023px) {
+      margin: 0 auto;
+    }
   }
 
   &__portfolio {

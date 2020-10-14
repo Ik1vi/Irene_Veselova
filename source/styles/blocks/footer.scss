@@ -9,7 +9,6 @@
     }
 
     @media (max-width: 1023px) {
-      flex-direction: column;
 
       padding: 39px 20px 43px;
     }
@@ -34,9 +33,13 @@
 
     @media (max-width: 1023px) {
       max-width: unset;
-  		padding: 0;
-  		margin-top: 23px;
+      padding: 0;
+      margin: 0 auto;
     }
+  }
+
+  &__contacts {
+    margin-bottom: 23px;
   }
 
   &__call-btn {

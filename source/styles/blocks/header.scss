@@ -144,8 +144,10 @@
 
       @media (max-width: 1023px) {
         display: block;
+
+        width: 85%;
+        max-width: 340px;
         margin: 0 auto;
-        max-width: 270px;
       }
     }
   }
@@ -164,10 +166,11 @@
     }
 
     @media (max-width: 1023px) {
+      max-width: none;
       margin: 426px 0 27px;
 
   		font-size: 30px;
-  		text-align: center;
+      text-align: center;
     }
   }
 
@@ -197,5 +200,9 @@
 
   &__btn {
     margin: 0;
+
+    @media (max-width: 1023px) {
+      margin: 0 auto;
+    }
   }
 }
