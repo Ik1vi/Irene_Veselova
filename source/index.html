@@ -134,7 +134,70 @@
 			<section id="portfolio" class="page__section page-section">
 				<h2 class="page-section__title">Примеры моих работ</h2>
 
-				<div class= "fixed-container page-section__portfolio portfolio">
+				<div class="swiper-container fixed-container portfolio page-section__portfolio">
+					<div class="swiper-button-prev btn portfolio__btn carousel-btn portfolio__btn--previous"></div>
+					<div class="swiper-button-next btn portfolio__btn carousel-btn portfolio__btn--next"></div>
+
+					<div class="swiper-wrapper">
+						<article class="swiper-slide">
+							<picture>
+								<source media="(max-width: 1023px)" type="image/webp" srcset="img/280x250_webP_1x.webp 1x, img/280x250_webP_2x.webp 2x">
+
+								<source type="image/webp" srcset="img/455x360_webP_1x.webp 1x, img/455x360_webP_2x.webp 2x">
+
+								<source media="(max-width: 1023px)" srcset="img/280x250_png_1x.png 1x, img/280x250_png_2x.png 2x">
+
+								<source type="image/png" srcset="img/455x360_png_1x.png 1x, img/455x360_png_2x.png 2x">
+
+								<img class="portfolio__img" src="img/455x360_png_1x.png" srcset="img/455x360_png_2x.png" alt="Сайт психолога Веры Антоновой"/>
+							</picture>
+
+							<h3 class="portfolio__h3">
+								<a class="portfolio__link" href="#">Первый пример работы</a>
+							</h3>
+						</article>
+
+						<article class="swiper-slide">
+							<picture>
+								<source media="(max-width: 1023px)" type="image/webp" srcset="img/280x250_webP_1x.webp 1x, img/280x250_webP_2x.webp 2x">
+
+								<source type="image/webp" srcset="img/455x360_webP_1x_2.webp 1x, img/455x360_webP_2x_2.webp 2x">
+
+								<source media="(max-width: 1023px)" srcset="img/280x250_png_1x.png 1x, img/280x250_png_2x.png 2x">
+
+								<source type="image/png" srcset="img/455x360_png_1x.png 1x, img/455x360_png_2x.png 2x">
+
+								<img class="portfolio__img" src="img/455x360_png_1x.png" srcset="img/455x360_png_2x.png" alt="Сайт магазина детской одежды"/>
+							</picture>
+
+							<h3 class="portfolio__h3">
+								<a class="portfolio__link" href="#">Второй пример работы</a>
+							</h3>
+						</article>
+
+						<article class="swiper-slide">
+							<picture>
+								<source media="(max-width: 1023px)" type="image/webp" srcset="img/280x250_webP_1x.webp 1x, img/280x250_webP_2x.webp 2x">
+
+								<source type="image/webp" srcset="img/455x360_webP_1x_3.webp 1x, img/455x360_webP_2x_3.webp 2x">
+
+								<source media="(max-width: 1023px)" srcset="img/280x250_png_1x.png 1x, img/280x250_png_2x.png 2x">
+
+								<source type="image/png" srcset="img/455x360_png_1x.png 1x, img/455x360_png_2x.png 2x">
+
+								<img class="portfolio__img" src="img/455x360_png_1x.png" srcset="img/455x360_png_2x.png" alt="Сайт магазина «Рыболов»"/>
+							</picture>
+
+							<h3 class="portfolio__h3">
+								<a class="portfolio__link" href="#">Третий пример работы</a>
+							</h3>
+						</article>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<!-- <div class= "fixed-container page-section__portfolio portfolio">
 					<button class="btn portfolio__btn carousel-btn portfolio__btn--previous" type="button" aria-label="Посмотреть предыдущую работу"></button>
 					<button class="btn portfolio__btn carousel-btn portfolio__btn--next" type="button" aria-label="Посмотреть следующую работу"></button>
 
@@ -211,7 +274,7 @@
 							<button class="btn pagination__dot js-pagination-dot" type="button" aria-label="Примеры работ, часть три"></button>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 
 				<button class="btn btn--primary page-section__btn js-form-call-btn" type="button" >Заказать проект</button>
 			</section>
