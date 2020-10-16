@@ -1,0 +1,52 @@
+.pagination {
+    position: relative;
+    display: none;
+
+    @media (max-width: 1169px) {
+        display: inline-block;
+    }
+
+    .swiper-pagination-bullet {
+        opacity: 1;
+        background-color: $light-accent-color;
+        outline: none;
+
+        @media (max-width: 1169px) {
+            width: 18px;
+            height: 18px;
+        }
+
+        @media (max-width: 1023px) {
+            width: 10px;
+            height: 10px;
+        }
+
+        &:focus {
+            border-radius:90px;
+      
+            -webkit-box-shadow: 0px 0px 0px 5px $focus-accent-color;
+            -moz-box-shadow: 0px 0px 0px 5px $focus-accent-color;
+            box-shadow: 0px 0px 0px 5px $focus-accent-color;
+        }
+        
+        &:hover {
+            background-position: left top;
+            opacity: 0.5;
+            transition: all 0.3s;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $dark-shades;
+    }
+}
+
+.swiper-container-horizontal .swiper-pagination-bullets .swiper-pagination-bullet {
+    @media (max-width: 1169px) {
+        margin: 0 15px;
+    }
+    
+    @media (max-width: 1023px) {
+        margin: 0 8px;
+    }
+}

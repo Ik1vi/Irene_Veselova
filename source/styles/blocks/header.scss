@@ -52,7 +52,6 @@
   }
 
   &__phone {
-
   	font-weight: 700;
     font-size: 25px;
 
@@ -108,7 +107,6 @@
     }
 
     &--left {
-      position: absolute;
       top: 227px;
       left: 37%;
 
@@ -124,7 +122,6 @@
     }
   
     &--right {
-      position: absolute;
       top: 200px;
       left: 67%;
 
@@ -143,7 +140,10 @@
       display: none;
 
       @media (max-width: 1023px) {
+        position: relative;
         display: block;
+        left: unset;
+        top: unset;
 
         width: 85%;
         max-width: 340px;

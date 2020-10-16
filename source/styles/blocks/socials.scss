@@ -1,5 +1,5 @@
 .socials {
-  @include flex-container(space-between, flex-end);
+  @include flex-container(flex-end, flex-end);
 
 	max-width: 250px;
   @include list-el-reset();
@@ -11,6 +11,8 @@
   @media (max-width: 1023px) {
     max-width: unset;
     min-width: 100%;
+
+    justify-content: center;
   }
 
   &__link {
@@ -41,14 +43,7 @@
   }
 
   &__item:nth-child(2) &__link {
-  	background-position: 0 bottom;
-  }
-
-  &__item:nth-child(3) &__link {
-  	background-position: right 0;
-  }
-
-  &__item:nth-child(4) &__link {
-  	background-position: right bottom;
+    background-position: right bottom;
+    margin-left: 10px;
   }
 }

@@ -9,13 +9,12 @@
   @media (max-width: 1169px) {
     overflow: hidden;
 
-		max-width: 1024px;
-    padding: 0 40px;
+		max-width: 945px;
+    padding: 0;
   }
 
   @media (max-width: 1023px) {
-    max-width: 320px;
-    padding: 0 20px;
+    max-width: 788x;
   }
 
   &__btn {
@@ -40,57 +39,17 @@
   }
 
   &__list {
-    position:relative;
-    overflow: hidden;
-
-    @include flex-container(flex-start, flex-start);
-    flex-wrap: nowrap;
-
     @include list-reset;
-
-    @media (max-width: 1169px) {
-  		min-width: 1440px;
-  		max-width: none;
-    }
-
-    @media (max-width: 1023px) {
-      height: unset;
-      min-width: 1000px;
-    }
   }
 
   &__img {
     @media (max-width: 1169px) {
       min-width: 455px;
-  		max-height: none;
+      width: 100%;
     }
 
     @media (max-width: 1023px) {
-      min-width: auto;
-      max-width: 280px;
-    }
-  }
-
-  &__item {
-    min-width: 370px;
-    max-width: 370px;
-    margin: 0 30px 0 0;
-
-    @media (max-width: 1169px) {
-  		min-width: 455px;
-      max-width: none;
-      margin-right: 37px;
-    }
-
-    @media (max-width: 1023px) {
-      min-width: unset;
-      max-width: 280px;
-    }
-
-    &:nth-child(3) {
-      @media (max-width: 1169px) {
-        display: none;
-      }
+      min-width: 270px;
     }
   }
 
@@ -105,7 +64,6 @@
     color: $text-primary-color;
 
     @media (max-width: 1169px) {
-      max-width: 455px;
   		margin-top: 10px;
 
   		font-size: 25px;
@@ -113,7 +71,7 @@
     }
 
     @media (max-width: 1023px) {
-      margin-top: 9px;
+      margin-top: 5px;
 
       font-size: 18px;
       text-align: left;
@@ -129,11 +87,11 @@
 
   &__pagination {
     @media (max-width: 1169px) {
-      margin: 85px auto 0;
+      margin: 105px auto 0;
     }
 
     @media (max-width: 1023px) {
-      margin: 31px auto 0;
+      margin: 45px auto 0;
     }
   }
 }

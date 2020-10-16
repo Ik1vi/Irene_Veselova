@@ -59,6 +59,7 @@
 
   &:hover {
     color: $primary-color;
+    transition: all 0.3s;
   }
 
   &:active {
