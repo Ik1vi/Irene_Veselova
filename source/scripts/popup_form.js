@@ -11,13 +11,11 @@ for (let i=0, length = formBtnsCollection.length; i < length; i++) {
 
 btnPopupCloseEl.addEventListener('click', function() {
 	popupContainerEl.style.display = 'none';
-	formEl.reset();
 });
 
 document.addEventListener('mousedown', function(e) {
 	if(!e.target.closest('.js-popup')){
 		popupContainerEl.style.display = 'none';
-		formEl.reset();
     }
 });
 
@@ -65,7 +63,7 @@ let formSubmitHandler = function(e) {
 	e.preventDefault();
 	Email.send({
 		SecureToken: "0079c8e2-11ff-4db9-8990-d53ff02914bd",
-		To : 'moronvv@gmail.com',
+		To : 'ik1vikuz@gmail.com',
 		From : 'ik1vikuz@gmail.com',
 		Subject : "Portfolio-page request",
 		Body :`
@@ -84,8 +82,8 @@ let formSubmitHandler = function(e) {
 			</html>`
 	}).then(
 	  message => {
-		  console.log(message)
 		  popupContainerEl.style.display = 'none';
+		  formEl.reset();
 		  alert('Спасибо!Данные переданы успешно');  
 	  }
 	);
