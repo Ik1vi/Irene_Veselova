@@ -11,7 +11,9 @@ const formBtnsCollection = document.querySelectorAll('.js-form-call-btn');
 
 const popupContainerEl = document.querySelector('.js-popup-container');
 const formEl = document.querySelector('.js-form');
+const nameInputEl = document.querySelector('.js-name__input')
 const telInputEl = document.querySelector('.js-tel-input');
+const mailInputEl = document.querySelector('.js-mail__input')
 
 const btnPopupCloseEl = document.querySelector('.js-btn-close');
 

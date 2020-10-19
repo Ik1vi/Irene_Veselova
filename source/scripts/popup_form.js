@@ -61,9 +61,34 @@ window.addEventListener('DOMContentLoaded', function() {
 	telInputEl.addEventListener('blur', mask, false)
 });
 
-let formSubmitHandler = function() {
-	popupContainer.style.display = 'none';
-	alert('Спасибо!Данные переданы успешно');
+let formSubmitHandler = function(e) {
+	e.preventDefault();
+	Email.send({
+		SecureToken: "0079c8e2-11ff-4db9-8990-d53ff02914bd",
+		To : 'moronvv@gmail.com',
+		From : 'ik1vikuz@gmail.com',
+		Subject : "Portfolio-page request",
+		Body :`
+			<html>
+				<h2>Имя адресата:</h2>
+					
+				<p>${nameInputEl.value}<p/>
+
+				<h2>Телефон:</h2>
+
+				<p>${telInputEl.value}<p/>
+
+				<h2>Почтовый адрес:</h2>
+
+				<p>${mailInputEl.value}<p/>
+			</html>`
+	}).then(
+	  message => {
+		  console.log(message)
+		  popupContainerEl.style.display = 'none';
+		  alert('Спасибо!Данные переданы успешно');  
+	  }
+	);
 }
 
 formEl.addEventListener('submit', formSubmitHandler);
