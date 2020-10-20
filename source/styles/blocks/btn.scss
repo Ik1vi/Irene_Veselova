@@ -1,9 +1,12 @@
 .btn {
   @include button-reset;
+  
   border: 1px solid;
   font-size: 16px;
   color: #f53f4f;
-	text-align: center;
+  text-align: center;
+  
+  transition: all 0.3s;
 
   &--primary {
   	display: block;

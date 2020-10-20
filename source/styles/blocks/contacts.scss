@@ -36,6 +36,7 @@
     font-size: 25px;
     
     @include link-highlights;
+    transition: all 0.3s ease-out;
 
     background-image: url('../img/icons/contacts-sprite.svg');
     background-repeat: no-repeat;

@@ -25,9 +25,10 @@
     background-size: 75px;
     outline: none;
 
+    transition: all 0.3s;
+
     &:hover {
       background-image: url('../img/icons/social-media-sprite-focus.svg');
-      transition: all 0.3s;
     }
 
     &:focus {
