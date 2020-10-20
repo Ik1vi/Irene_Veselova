@@ -27,6 +27,7 @@
 
     &:hover {
       background-image: url('../img/icons/social-media-sprite-focus.svg');
+      transition: all 0.3s;
     }
 
     &:focus {
@@ -37,7 +38,6 @@
 
     &:active {
       background-image: url('../img/icons/social-media-sprite.svg');
-      
     }
 
   }

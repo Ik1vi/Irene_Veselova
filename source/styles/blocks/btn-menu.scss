@@ -1,15 +1,19 @@
 .btn-menu {
   display: none;
   border: 0;
+
+  transition: none;
   
   @include button-reset;
 
   &:focus {
     @include focus-el;
+    transition: none;
   }
 
   &:hover {
     @include hover-el;
+    transition: none;
   }
 
   &:active {
