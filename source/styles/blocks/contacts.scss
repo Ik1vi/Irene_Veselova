@@ -20,8 +20,8 @@
   &__item {
     margin-bottom: 20px;
 
-    @media (max-width: 1023px) {
-      margin-bottom: 13px;
+    @media (max-width: 480px) {
+      margin-bottom: 22px;
     }
 
     &:last-child {
@@ -30,37 +30,41 @@
   }
 
   &__link {
-  	padding-left: 40px;
+  	padding-left: 38px;
 
   	line-height: 1.6;
     font-size: 25px;
     
     @include link-highlights;
 
-		@include background-image(none, left 40%);
+    background-image: url('../img/icons/contacts-sprite.svg');
+    background-repeat: no-repeat;
+    background-size: 24px;
 
-    @media (max-width: 1023px) {
-      padding-left: 33px;
+    @media (max-width: 480px) {
+      padding-left: 34px;
 
-  		font-size: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 0;
     }
 
     &--phone {
-      background-image: url('../img/icons/icon-phone.png');
+      background-position: left 3px;
 
-      @media (max-width: 1023px) {
-        background-size: 14px;
+      @media (max-width: 480px) {
+        background-position: left 5px;
+        background-size: 18px;
       }
     }
 
     &--mail {
       padding-left: 45px;
+      background-position: left bottom;
 
-			@include background-image(url('../img/icons/icon-mail.png'), left 60%);
-
-      @media (max-width: 1023px) {
+      @media (max-width: 480px) {
         background-size: 16px;
-        font-weight: 500;
+        background-position: left -14px;
       }
     }
   }

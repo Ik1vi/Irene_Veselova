@@ -42,14 +42,20 @@
 	}
 
   &--round {
-    @media (max-width: 1023px) {
-      padding: 12px;
+	@media (max-width: 1023px) {
+		padding: 20px;
 
-      font-size: 11px;
-      border-radius: 50%;
+		font-size: 11px;
+		border-radius: 90%;
 
-			@include background-image(url('../img/icons/icon-phone.png'), 5px 5px);
-			background-size: 13px;
+		@include background-image(url('../img/icons/contacts-sprite.svg'), 10px 8px);
+		background-size: 25px;
+	}
+
+    @media (max-width: 480px) {
+		padding: 12px;
+		background-position: 6px 5px;
+		background-size: 15px;
     }
   }
 }
