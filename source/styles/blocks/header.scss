@@ -5,7 +5,29 @@
 
   padding-bottom: 201px;
 
-  background: linear-gradient(90deg, $light-accent-color 42%, $white-like 42%);
+  // background: linear-gradient(90deg, $light-accent-color 42%, $white-like 42%);
+  transition: all 1s;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-color: $light-accent-color;
+    width:0;
+    height: 100%;
+    content: '';
+    transition: all 3s;
+  }
+
+  &--loaded:after {
+    width: 42%;
+  }
+
+  &--scrolled:after {
+    width: 130%;
+    background-color: $white-like;
+  }
 
   @media (max-width: 1169px) {
     padding-bottom: 230px;

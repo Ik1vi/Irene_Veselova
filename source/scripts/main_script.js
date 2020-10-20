@@ -50,4 +50,22 @@ window.addEventListener(`resize`, event => { //слушаем изменение
 	}
 }, false);
 
+window.addEventListener("load", function(event) {
+	headerEl.classList.add('header--loaded');
+});
+
+window.addEventListener("scroll", function (e) {
+ 
+   if(window.pageYOffset > 300)
+   {
+	headerEl.classList.remove('header--loaded');
+	headerEl.classList.add('header--scrolled');
+   }
+   else
+   {
+	headerEl.classList.add('header--loaded');
+	headerEl.classList.remove('header--scrolled');
+   }
+});
+
 checkWindowSize();
