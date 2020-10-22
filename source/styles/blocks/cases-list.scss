@@ -99,25 +99,47 @@
     	content: ' ';
       padding: 66px;
       
-      border-radius: 50%;
+      border-radius: 90%;
 
       -webkit-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.23);
       -moz-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.23);
       box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.23);
 
-      @include background-image(url('../img/icons/tools.png'));
+      transition: all 0.1s;
+
+      @include background-image(url('../img/icons/tools.svg'));
+      background-size: 101%; // 1 процент убирает нежелательную белую рамочку
     }
   }
 
+  &__item:hover &__p::before{
+    transform: scale(1.1);
+    
+    box-shadow: 8px 7px 9px 1px rgba(0,0,0,0.16);
+    @include background-image(url('../img/icons/tools-animate.svg'));
+  }
+
   &__item:nth-child(2) &__p::before{
-    @include background-image(url('../img/icons/responsive.png'));
+    @include background-image(url('../img/icons/responsive.svg'));
+  }
+
+  &__item:nth-child(2):hover &__p::before{
+    @include background-image(url('../img/icons/responsive-animate.svg'));
   }
 
   &__item:nth-child(3) &__p::before {
-    @include background-image(url('../img/icons/programming.png'));
+    @include background-image(url('../img/icons/programming.svg'));
+  }
+
+  &__item:nth-child(3):hover &__p::before {
+    @include background-image(url('../img/icons/programming-animate.svg'));
   }
 
   &__item:nth-child(4) &__p::before {
-    @include background-image(url('../img/icons/coding.png'));
+    @include background-image(url('../img/icons/coding.svg'));
+  }
+
+  &__item:nth-child(4):hover &__p::before {
+    @include background-image(url('../img/icons/coding-animate.svg'));
   }
 }
