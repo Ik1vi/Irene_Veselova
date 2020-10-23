@@ -52,6 +52,28 @@
     position: relative;
     outline: none;
 
+    &:after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 12px;
+      z-index: -1;
+    
+      height: 10px;
+    
+      content: "";
+      
+      background-color: $primary-color;
+      opacity: 0.3;
+      
+      transform: scaleX(0);
+      transition: transform .3s;
+    }
+    
+    &:hover:after {
+      transform: scaleX(1);
+    }
+
     &--grey {
     	font-size: 18px;
     	line-height: 1.9;
@@ -63,28 +85,6 @@
       }
     }
   }
-}
-
-.page-nav__link:after {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 12px;
-  z-index: -1;
-
-  height: 10px;
-
-  content: "";
-  
-  background-color: $primary-color;
-  opacity: 0.3;
-  
-  transform: scaleX(0);
-  transition: transform .3s;
-}
-
-.page-nav__link:hover:after {
-  transform: scaleX(1);
 }
 
 

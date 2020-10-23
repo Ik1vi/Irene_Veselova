@@ -5,17 +5,23 @@ for (let i=0, length = formBtnsCollection.length; i < length; i++) {
 		headerEl.classList.remove('menu-open');
 		bodyEl.classList.remove('js-fixed');
 
-		popupContainerEl.style.display = 'block';
+		popupContainerEl.style.visibility = 'visible';
+		popupContainerEl.style.opacity = '1';
+		popupContainerEl.classList.add('animate');
 	});
 }
 
 btnPopupCloseEl.addEventListener('click', function() {
-	popupContainerEl.style.display = 'none';
+	popupContainerEl.style.visibility = 'hidden';
+	popupContainerEl.style.opacity = '0';
+	popupContainerEl.classList.remove('animate');
 });
 
 document.addEventListener('mousedown', function(e) {
 	if(!e.target.closest('.js-popup')){
-		popupContainerEl.style.display = 'none';
+		popupContainerEl.style.visibility = 'hidden';
+		popupContainerEl.style.opacity = '0';
+		popupContainerEl.classList.remove('animate');
     }
 });
 

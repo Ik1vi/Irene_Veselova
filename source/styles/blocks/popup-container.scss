@@ -1,5 +1,5 @@
 .popup-container {
-    display:  none;
+    visibility: hidden;
     position: fixed;
     z-index: 10;
 
@@ -7,6 +7,8 @@
     height: 100%;
 
     background-color: rgba(251,251,251,0.7);
+    transition: all 0.4s;
+    opacity: 0;
 
     &__popup {
         margin: 100px auto;

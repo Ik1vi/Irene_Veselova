@@ -12,7 +12,7 @@ btnMenuEl.addEventListener('click', function(ev) {
     if(headerEl.classList.contains('menu-open') ) {
         btnMenuEl.setAttribute('aria-label', 'Скрыть меню');
     } else {
-        btnMenuEl.setAttribute('aria-label', 'пПоказать меню');
+        btnMenuEl.setAttribute('aria-label', 'Показать меню');
     }
 
 	if( (window.matchMedia('(max-width: 1023px)').matches) && (headerEl.classList.contains('menu-open')) ) {
@@ -28,3 +28,16 @@ btnMenuEl.addEventListener('click', function(ev) {
 		}
 	});
 });
+
+let modifyeHeaderMenu = function() {
+	if (window.matchMedia('(max-width: 1023px)').matches) { //если планшет или смартфон
+		if(headerEl.classList.contains('menu-open')) {
+			bodyEl.classList.add('js-fixed');//убираем прокрутку экрана
+		}
+	} else if (window.matchMedia('(min-width: 1170px)').matches){ //если десктоп
+		headerEl.classList.remove('menu-open'); //убираем класс раскрывающегося меню
+		bodyEl.classList.remove('js-fixed'); //возвращаем прокрутку экрана
+	} else { //если планшет или нетбук
+		bodyEl.classList.remove('js-fixed'); //возвращаем прокрутку экрана
+	}
+}
