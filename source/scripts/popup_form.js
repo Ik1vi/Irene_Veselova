@@ -4,6 +4,7 @@ for (let i=0, length = formBtnsCollection.length; i < length; i++) {
 
 		headerEl.classList.remove('menu-open');
 		bodyEl.classList.remove('js-fixed');
+		btnMunuLine.classList.remove('btn-line--active');
 
 		popupContainerEl.style.visibility = 'visible';
 		popupContainerEl.style.opacity = '1';

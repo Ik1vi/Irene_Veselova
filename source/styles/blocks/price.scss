@@ -1,13 +1,19 @@
 .price {
 	position: relative;
 
-	background: linear-gradient(16deg, $dark-accent-color 48%, $light-accent-color 98%);
+  background: linear-gradient(16deg, $dark-accent-color 48%, $light-accent-color 98%);
 
   &__wrapper {
-  	padding: 74px 100px 83px 115px;
+    padding: 74px 100px 83px 115px;
+    opacity: 0;
+
+    transition: all 1s ease-out;
+    transform: translateY(-20%);
 
     @media (max-width: 1169px) {
       padding: 75px 40px 81px;
+      opacity: 1;
+      transform: translateY(0);
     }
 
     @media (max-width: 1023px) {

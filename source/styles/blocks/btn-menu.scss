@@ -1,10 +1,26 @@
 .btn-menu {
   display: none;
-  border: 0;
 
-  transition: none;
-  
-  @include button-reset;
+  @media (max-width: 1169px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 43px;
+    height: 43px;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+    
+    outline: none;
+  }
+
+  @media (max-width: 480px) {
+    width: 24px;
+    height: 24px;
+  }
 
   &:focus {
     @include focus-el;
@@ -16,23 +32,86 @@
     transition: none;
   }
 
-  &:active {
-    opacity: 0.5;
-  }
-
-  @media (max-width: 1169px) {
+  &__line {
     display: block;
+    position: absolute;
+  
+    width: 43px;
+    height: 6px;
+  
+    background-color: $dark-shades;
+  
+    transition: 0.2s ease-in;
 
-		padding: 17px 24px;
-
-    @include background-image(url('../img/icons/nav-icon-sprite.svg'), right top);
-    
-    background-size: 70px;
+    @media (max-width: 480px) {
+      width: 24px;
+      height: 3px;
+    }
   }
+  
+  &__line::before {
+    content: "";
+    
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -13px;
+  
+    width: 43px;
+    height: 6px;
+  
+    background-color: $dark-shades;
+  
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 
-  @media (max-width: 480px) {
-    padding: 10px 14px;
+    @media (max-width: 480px) {
+      top: -8px;
 
-		background-size: 39px;
+      width: 24px;
+      height: 3px;
+    }
+  }
+  
+  &__line::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 14px;
+  
+    width: 43px;
+    height: 6px;
+  
+    background-color: $dark-shades;
+  
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+    @media (max-width: 480px) {
+      top: 8px;
+
+      width: 24px;
+      height: 3px;
+    }
+  }
+  
+  .btn-line--active {
+    background-color: transparent;
+  
+    transition: 0.2s ease-in;
+  }
+  
+  .btn-line--active::before {
+    top: 0;
+  
+    transform: rotate(45deg);
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  
+  .btn-line--active::after {
+    top: 0;
+  
+    transform: rotate(-45deg);
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
   }
 }

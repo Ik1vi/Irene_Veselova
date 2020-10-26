@@ -2,6 +2,7 @@ const bodyEl = document.querySelector('.js-body');
 const headerEl = document.querySelector('.js-header');
 
 const btnMenuEl = document.querySelector('.js-btn-menu');
+const btnMunuLine = document.querySelector('.js-btn-line');
 const navLinksCollection = document.querySelectorAll('.js-nav-link');
 const pageNavEl = document.querySelector('.js-page-nav');
 
@@ -27,6 +28,8 @@ const portraitCenter = document.querySelector ('.js-portrait');
 const portraitLeft = document.querySelector ('.js-portrait-left');
 const portraitRight = document.querySelector ('.js-portrait-right');
 
+const priceWrapperEl = document.querySelector('.js-price-wrapper');
+
 bodyEl.classList.remove('no-js');
 
 window.addEventListener("load", function(event) {
@@ -42,9 +45,13 @@ window.addEventListener(`resize`, event => {
 
 	changeHeaderBackground();
 	moveHeaderBackgroundImgs();
+
+	moovePriceContainer();
 }, false);
 
 window.addEventListener("scroll", function (e) {
 	changeHeaderBackground();
 	moveHeaderBackgroundImgs();
+	
+	moovePriceContainer();
 });
