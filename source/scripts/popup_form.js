@@ -89,7 +89,7 @@ let formSubmitHandler = function(e) {
 			</html>`
 	}).then(
 	  message => {
-		  popupContainerEl.style.display = 'none';
+		  popupContainerEl.style.visibility = 'hidden';
 		  formEl.reset();
 		  alert('Спасибо!Данные переданы успешно');  
 	  }
