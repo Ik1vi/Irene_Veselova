@@ -4,13 +4,15 @@ let mySwiper = new Swiper(slider, {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
+  grabCursor: true,
+  speed: 400,
 
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
     clickable: true,
   },
-
+  
   navigation: {
     hiddenClass: 'swiper-button-hidden',
   },
@@ -31,13 +33,13 @@ let mySwiper = new Swiper(slider, {
 
     1170: {
       slidesPerView: 3,
-      speed: 300,
       spaceBetween: 35,
 
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+
     }
   }
 });

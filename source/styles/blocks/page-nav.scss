@@ -33,7 +33,6 @@
     background-color: transparent;
     transition: all 0.8s;
     
-
     @media (max-width: 1169px) {
       flex-direction: column;
 
@@ -103,6 +102,11 @@
       transform: scaleX(1);
     }
 
+    &:focus {
+      @include focus-el;
+      background-color: $focus-accent-color;
+    }
+
     &--grey {
     	font-size: 18px;
     	line-height: 1.9;
@@ -139,5 +143,3 @@
     }
   }
 }
-
-

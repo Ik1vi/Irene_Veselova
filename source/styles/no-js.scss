@@ -1,19 +1,88 @@
 .no-js {
-    .page-nav__list {
-        @media (max-width: 1169px) {
-          display: flex;
-        }
-    }
-
     .header {
         &__phone-contacts {
             min-width: unset;
         }
 
-        &__menu {
-            @media (max-width: 1023px) {
-                margin-bottom: 15px;
+        &:after {
+            width:40%;
+            height: 100%;
+        
+            @media (max-width: 1169px) {
+              width: 50%;
             }
+        
+            @media (max-width: 1023px) {
+              width: 130%;
+              height: 58%;
+            }
+        }
+
+        &__bar {
+            @media (max-width: 1169px) {
+                justify-content: space-between; 
+            }
+    
+            @media (max-width: 1023px) {
+                justify-content: center;
+            }
+        }
+
+        .page-nav {
+            &__list {
+                @media (max-width: 1169px) {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0;
+                    transform: translateY(0);
+                }
+
+                @media (max-width: 1023px) {
+                    justify-content: space-evenly;
+                }
+                
+                @media (max-width: 480px) {
+                    min-width: 250px;
+                }
+
+            }
+
+            &__item {
+                min-width: 54px;
+                margin-right: 27px;
+                margin-bottom: 0;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                @media (max-width: 1023px) {
+                    margin-right: 10px;
+                }
+
+                @media (max-width: 480px) {
+                    font-size: 16px;
+                }
+            }
+
+            &--main {
+                @media (max-width: 1169px) {
+                    position: relative;
+                    top: unset;
+                    left: unset;
+                    visibility: visible;
+                    opacity: 1;
+
+                    width: unset;
+                    height: unset;
+
+                    background-color: unset;
+                }
+            }
+        }
+
+        .btn-menu {
+            display: none;
         }
     }
 
@@ -35,28 +104,60 @@
 
     .portfolio {
         &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
             @media (max-width: 1169px) {
                 min-width: unset;
-                flex-wrap: wrap;
                 height: auto;
             }
         }
 
         &__item {
+            max-width: 370px;
+            margin-right: 25px;
+
             @media (max-width: 1169px) {
+                max-width: 45%;
                 min-width: unset;
-                max-width: none;
-                width: 45%;
 
                 margin-bottom: 20px;
+
+                &:nth-child(2n) {
+                    margin: 0; 
+                }
             }
 
             @media (max-width: 1023px) {
                 width: unset;
             }
 
-            &:last-child {
-                margin-bottom: 0;  
+            @media (max-width: 480px) {
+                width: 100%;
+                max-width: unset;
+                margin-bottom: 20px;
+                margin-right: 0;
+
+                &:nth-child(2n) {
+                    margin-bottom: 20px;
+                }
+
+                &:nth-child(3n) {
+                    margin-bottom: 20px; 
+                }
+
+                &:last-child {
+                    margin-bottom: 0;   
+                }
+            }
+
+            &:nth-child(3n) {
+                margin: 0; 
+            }
+
+            &:nth-child(n+4) {
+                margin-top: 20px; 
             }
         }
 
@@ -64,10 +165,20 @@
             @media (max-width: 1169px) {
                 min-width: unset;
             }
+
+            @media (max-width: 480px) {
+                width: 100%;
+                max-width: unset;
+            }
         }
 
         &__pagination {
             display: none;
         }
+    }
+
+    .price__wrapper {
+          opacity: 1;
+          transform: translateY(0);
     }
 }
