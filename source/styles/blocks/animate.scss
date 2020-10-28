@@ -1,6 +1,19 @@
-.animate {
+.animate-form {
+    &.popup-container {
+        visibility: visible;
+        opacity: 1;
+    }
+
     .popup {
         transform: scale(1, 1);
+    
+        &--success {
+            display: none;
+        }
+
+        &--form {
+            visibility: visible;
+        }
     }
 
     .popup__text {
@@ -8,5 +21,24 @@
         padding: 5px;
         
         opacity: 1;
+    }
+}
+
+.animate-success {
+    &.popup-container {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .popup {
+        transform: scale(1, 1);
+
+        &--form {
+            display: none;
+        }
+
+        &--success {
+            visibility: visible;
+        }
     }
 }

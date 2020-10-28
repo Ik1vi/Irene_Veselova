@@ -5,9 +5,6 @@
 
   padding-bottom: 201px;
 
-  // background: linear-gradient(90deg, $light-accent-color 42%, $white-like 42%);
-  transition: all 1s;
-
   &:after {
     position: absolute;
     top: 0;
@@ -17,7 +14,7 @@
     width:0;
     height: 100%;
     content: '';
-    transition: all 3s;
+    transition: width 3s, height 3s, background-color 3s;
 
     @media (max-width: 1169px) {
       width: 50%;
@@ -84,7 +81,6 @@
     font-size: 25px;
 
     @include link-highlights;
-    transition: all 0.3s;
 
     @media (max-width: 1169px) {
       font-size: 25px;
@@ -152,13 +148,13 @@
     }
 
     &--center {
-      transition: all 0.8s ;
+      transition: opacity 0.8s;
     }
 
     &--left {
       top: 227px;
       left: 37%;
-      transition: all 0.3s;
+      transition: opacity 0.3s;
 
       @media (max-width: 1169px) {
         left: 40%;
@@ -182,7 +178,7 @@
     &--right {
       top: 200px;
       left: 67%;
-      transition: all 0.3s;
+      transition: opacity 0.3s;
 
       @media (max-width: 1169px) {
         left: 66%;
@@ -206,7 +202,7 @@
     &--original {
       display: block;
       opacity: 0;
-      transition: all 0.8s;
+      transition: opacity 0.8s;
 
       @media (max-width: 1169px) {
         display: none;

@@ -7,7 +7,7 @@
     padding: 74px 100px 83px 115px;
     opacity: 0;
 
-    transition: all 1s ease-out;
+    transition: transform 1s ease-out, opacity 1s, padding 1s;
     transform: translateY(-20%);
 
     @media (max-width: 1169px) {

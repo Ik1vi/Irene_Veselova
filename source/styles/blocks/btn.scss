@@ -6,7 +6,7 @@
   color: #f53f4f;
   text-align: center;
   
-  transition: all 0.3s;
+  transition: box-shadow 0.5s, opacity 0.3s;
 
   &--primary {
   	display: block;

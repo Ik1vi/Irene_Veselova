@@ -28,8 +28,11 @@
     transition: all 0.4s;
 
     &:hover {
-      background-image: url('../img/icons/social-media-sprite-focus.svg');
       transform: scale(1.1) translateY(-7px);
+
+      @media (max-width: 1023px) {
+        transform: none;
+      }
     }
 
     &:focus {

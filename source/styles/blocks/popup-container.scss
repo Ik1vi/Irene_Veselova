@@ -7,7 +7,7 @@
     height: 100%;
 
     background-color: rgba(251,251,251,0.7);
-    transition: all 0.4s;
+    transition: opacity 0.4s, visibility 0.4s;
     opacity: 0;
 
     &__popup {

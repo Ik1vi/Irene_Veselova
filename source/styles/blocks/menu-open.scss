@@ -1,11 +1,13 @@
 
-.menu-open{
-    .page-nav--main {
-        visibility: visible;
-        opacity: 1;
-    }
+.menu-open {
+    .page-nav {
+        &--main {
+            visibility: visible;
+            opacity: 1;
+        }
 
-    .page-nav__list {
-        transform: translateY(0);
-    }
+        &__list {
+            transform: translateY(0);
+        }
+    }    
 }

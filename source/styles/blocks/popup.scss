@@ -6,12 +6,28 @@
     
     background-color: rgba(58,93,114,0.9);
 
-    transition: all 0.2s;
+    transition: transform 0.2s;
     transform: scale(0.9,0.9);
 
     @media (max-width: 1023px) {
         width: 100%;
         padding: 20px;
+    }
+
+    &--form {
+        visibility: hidden;
+    }
+
+    &--success {
+        visibility: hidden;
+
+        @media (max-width: 1023px) {
+            padding: 20px 95px;
+        }
+
+        @media (max-width: 480px) {
+            padding: 20px;
+        }
     }
 
     &__btn-close {
@@ -72,6 +88,23 @@
 
         @media (max-width: 1023px) {
             margin-bottom: 5px;
+        }
+    }
+
+    &__p {
+        color: $white-like;
+        font-size: 16px;
+
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+
+        &--main {
+            font-size: 18px;  
+
+            @media (max-width: 480px) {
+                font-size: 16px;
+            }
         }
     }
 }

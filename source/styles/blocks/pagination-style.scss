@@ -10,6 +10,7 @@
         opacity: 1;
         background-color: $light-accent-color;
         outline: none;
+        transition: background-color 0.3s;
 
         @media (max-width: 1169px) {
             width: 18px;
@@ -30,9 +31,7 @@
         }
         
         &:hover {
-            background-position: left top;
             opacity: 0.5;
-            transition: all 0.3s;
         }
     }
 

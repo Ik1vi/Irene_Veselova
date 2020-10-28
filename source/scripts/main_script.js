@@ -11,14 +11,16 @@ const btnHeaderPhoneEl = document.querySelector('.js-call-btn');
 const formBtnsCollection = document.querySelectorAll('.js-form-call-btn');
 
 const popupContainerEl = document.querySelector('.js-popup-container');
-const popupEl = document.querySelector('.js-popup');
+const btnClosePopupCollection = document.querySelectorAll('.js-btn-close');
 
+const popupFormEl = document.querySelector('.js-popup-form');
 const formEl = document.querySelector('.js-form');
 const nameInputEl = document.querySelector('.js-name-input')
 const telInputEl = document.querySelector('.js-tel-input');
 const mailInputEl = document.querySelector('.js-mail-input')
 
-const btnPopupCloseEl = document.querySelector('.js-btn-close');
+const popupSuccessEl = document.querySelector('.js-popup-success');
+const popupSuccessBtnEl = document.querySelector('.js-popup-btn-success');
 
 const paginationDotCollection =  document.querySelectorAll('.js-pagination-dot');
 const portfolioCollection =  document.querySelectorAll('.js-portfolio-item');

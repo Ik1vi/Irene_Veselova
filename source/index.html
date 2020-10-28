@@ -25,21 +25,33 @@
 
 	<body class="js-body no-js">
 		<div class="popup-container js-popup-container">
-			<div class="popup-container__popup popup js-popup">
+			<div class="popup-container__popup popup popup--form js-popup-form">
 				<button class="popup__btn-close btn-close js-btn-close" type="button" aria-label="Закрыть форму"></button>
 
 				<form class="popup__form js-form" action="" enctype="text/plain" method="post">
 					<label class="popup__label" for="popup-name">Ваше имя</label>
-					<input id="popup-name" class="popup__text js-name-input" type="text" name="popup-name" maxlength="25" autofocus required/>
+					<input id="popup-name" class="popup__text js-name-input" type="text" name="popup-name" maxlength="25" autofocus required></input>
 					
 					<label class="popup__label" for="popup-tel">Ваш телефон</label>
-					<input id="popup-tel" class="popup__text js-tel-input" type="tel" name="popup-tel" maxlength="25" autofocus required/>
+					<input id="popup-tel" class="popup__text js-tel-input" type="tel" name="popup-tel" maxlength="25" autofocus required></input>
 					
 					<label class="popup__label" for="popup-mail">Ваш e-mail</label>
-					<input id="popup-mail" class="popup__text js-mail-input" type="email" name="popup-mail" maxlength="25" autofocus required/>
+					<input id="popup-mail" class="popup__text js-mail-input" type="email" name="popup-mail" maxlength="25" autofocus required></input>
 
-					<input class="btn btn--primary popup__btn js-popup-btn" type="submit" href="#" value="Отправить"/>
+					<input class="btn btn--primary popup__btn js-popup-btn" type="submit" href="#" value="Отправить"></input>
 				</form>
+			</div>
+
+			<div class="popup-container__popup popup popup--success js-popup-success">
+				<button class="popup__btn-close btn-close js-btn-close" type="button" aria-label="Закрыть форму"></button>
+
+				<p class="popup__p popup__p--main">Спасибо!
+				</p>
+
+				<p class="popup__p">Ваши данные успешно отправлены. Мы скоро свяжемся с вами :)
+				</p>
+
+				<button class="btn btn--primary popup__btn js-popup-btn-success" type="button" href="#" aria-label="Закрыть форму">Отлично!</button>
 			</div>
 		</div>
 

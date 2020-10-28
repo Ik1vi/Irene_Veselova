@@ -6,23 +6,27 @@ for (let i=0, length = formBtnsCollection.length; i < length; i++) {
 		bodyEl.classList.remove('js-fixed');
 		btnMunuLine.classList.remove('btn-line--active');
 
-		popupContainerEl.style.visibility = 'visible';
-		popupContainerEl.style.opacity = '1';
-		popupContainerEl.classList.add('animate');
+		popupContainerEl.classList.add('animate-form');
 	});
 }
 
-btnPopupCloseEl.addEventListener('click', function() {
-	popupContainerEl.style.visibility = 'hidden';
-	popupContainerEl.style.opacity = '0';
-	popupContainerEl.classList.remove('animate');
+for (let i=0, length = btnClosePopupCollection.length; i < length; i++) {
+	btnClosePopupCollection[i].addEventListener('click', function(ev) {
+		ev.preventDefault();
+
+		popupContainerEl.classList.remove('animate-form');
+		popupContainerEl.classList.remove('animate-success');
+	});
+}
+
+popupSuccessBtnEl.addEventListener('click', function() {
+	popupContainerEl.classList.remove('animate-success');
 });
 
 document.addEventListener('mousedown', function(e) {
-	if(!e.target.closest('.js-popup')){
-		popupContainerEl.style.visibility = 'hidden';
-		popupContainerEl.style.opacity = '0';
-		popupContainerEl.classList.remove('animate');
+	if(!e.target.closest('.js-popup-form') && !e.target.closest('.js-popup-success') ){
+		popupContainerEl.classList.remove('animate-form');
+		popupContainerEl.classList.remove('animate-success');
     }
 });
 
@@ -89,9 +93,9 @@ let formSubmitHandler = function(e) {
 			</html>`
 	}).then(
 	  message => {
-		  popupContainerEl.style.visibility = 'hidden';
-		  formEl.reset();
-		  alert('Спасибо!Данные переданы успешно');  
+		popupContainerEl.classList.remove('animate-form');
+		popupContainerEl.classList.add('animate-success');
+		formEl.reset();
 	  }
 	);
 }
