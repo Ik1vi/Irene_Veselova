@@ -25,7 +25,7 @@
     background-size: 75px;
     outline: none;
 
-    transition: all 0.4s;
+    transition: transform 0.4s, background-image 0.4s;
 
     &:hover {
       transform: scale(1.1) translateY(-7px);
@@ -39,12 +39,16 @@
       border-radius: 90px;
       background-color: $focus-accent-color;
       @include focus-el;
+
+      @media (max-width: 1023px) {
+        background-color: unset;
+        background-image: url('../img/icons/social-media-sprite-focus.svg');
+      }
     }
 
     &:active {
-      background-image: url('../img/icons/social-media-sprite.svg');
+      background-image: url('../img/icons/social-media-sprite-focus.svg');
     }
-
   }
 
   &__item:nth-child(2) &__link {

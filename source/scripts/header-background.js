@@ -1,3 +1,4 @@
+
 let changeHeaderBackground = function() {
 	if (window.matchMedia('(min-width: 1170px)').matches){
 		headerEl.classList.add('header--loaded');
