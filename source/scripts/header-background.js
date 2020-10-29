@@ -21,16 +21,16 @@ let moveHeaderBackgroundImgs = function() {
 	if (window.matchMedia('(min-width: 1170px)').matches){
 		animatePosition = window.pageYOffset - 50;
 
-		if(window.pageYOffset > 50 && window.pageYOffset < 180 ) {
-			portraitLeft.style.left = 37 + animatePosition/10 + '%';
+		if(window.pageYOffset > 50 && window.pageYOffset < 300 ) {
+			portraitLeft.style.left = 37 + animatePosition/20 + '%';
 			portraitLeft.style.opacity = '1';
 
-			portraitRight.style.left = 67 - animatePosition/10 + '%';
+			portraitRight.style.left = 67 - animatePosition/20 + '%';
 			portraitRight.style.opacity = '1';
 
 			portraitOriginal.style.opacity = '0';
 
-		} else if (window.pageYOffset >= 180) {
+		} else if (window.pageYOffset >= 300) {
 			portraitLeft.style.opacity = '0';
 			portraitRight.style.opacity = '0';
 			portraitOriginal.style.opacity = '1';
