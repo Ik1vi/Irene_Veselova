@@ -6,13 +6,17 @@
 
     .popup {
         transform: scale(1, 1);
-    
-        &--success {
-            display: none;
-        }
 
         &--form {
             visibility: visible;
+            transform: scale(1,1);
+            opacity: 1;
+        }
+    
+        &--success {
+            visibility: hidden;
+            transform: scale(0.9,0.9);
+            opacity: 0;
         }
     }
 
@@ -33,12 +37,17 @@
     .popup {
         transform: scale(1, 1);
 
-        &--form {
-            display: none;
-        }
-
         &--success {
             visibility: visible;
+            transform: scale(1,1);
+            opacity: 1;
+        }
+
+        &--form {
+            display: none;
+            visibility: hidden;
+            transform: scale(0.9,0.9);
+            opacity: 0;
         }
     }
 }
