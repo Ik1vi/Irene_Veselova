@@ -1,5 +1,5 @@
 .socials {
-  @include flex-container(flex-end, flex-end);
+  @include flex-container(space-between, flex-end);
 
 	max-width: 250px;
   @include list-el-reset();
@@ -11,21 +11,20 @@
   @media (max-width: 1023px) {
     max-width: unset;
     min-width: 100%;
-
-    justify-content: center;
   }
 
   &__link {
     display: block;
     
     padding: 19px;
+    margin-right: 10px;
 
     background-image: url('../img/icons/social-media-sprite.svg');
     background-repeat: no-repeat;
     background-size: 75px;
     outline: none;
 
-    transition: transform 0.4s, background-image 0.4s;
+    transition: transform 0.4s, background-image 0.4s ;
 
     &:hover {
       transform: scale(1.1) translateY(-7px);
@@ -53,6 +52,17 @@
 
   &__item:nth-child(2) &__link {
     background-position: right bottom;
-    margin-left: 10px;
+  }
+
+  &__item:nth-child(3) &__link {
+    background-position: left bottom;
+  }
+
+  &__item:nth-child(4) &__link {
+    background-position: right top;
+  }
+
+  &__item:last-child &__link {
+    margin-right: 0;
   }
 }
