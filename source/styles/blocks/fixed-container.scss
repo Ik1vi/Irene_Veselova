@@ -1,6 +1,7 @@
 .fixed-container {
   	max-width: 1170px; /* задает ширину */
 	margin: 0 auto; /* задает внешние отcтупы */
+	padding: 0 20px;
 
   @media (max-width: 1169px) {
 		max-width: 1024px;

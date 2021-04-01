@@ -1,5 +1,6 @@
 .btn-menu {
   display: none;
+  cursor: pointer;
 
   @media (max-width: 1169px) {
     display: flex;

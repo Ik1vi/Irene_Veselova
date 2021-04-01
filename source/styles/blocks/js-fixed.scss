@@ -1,12 +1,4 @@
 .js-fixed {
-	position:fixed; /*позицианируем чтобы исчез скролл*/
-
 	width:100%; /*что бы верстка не складывалась по ширине*/
-    overflow: auto;
-    
-	.header {
-        overflow: hidden;
-        position: relative;
-        height: 100vh;
-    }
+    overflow: hidden;
 }

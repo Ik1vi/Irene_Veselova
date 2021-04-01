@@ -6,13 +6,16 @@ btnMenuEl.addEventListener('click', function(ev) {
 		navLinksCollection[i].addEventListener('click', function() {
 			headerEl.classList.remove('menu-open');
 			bodyEl.classList.remove('js-fixed');
+			btnMunuLine.classList.remove('btn-line--active');
 		});
     }
     
     if(headerEl.classList.contains('menu-open') ) {
         btnMenuEl.setAttribute('aria-label', 'Скрыть меню');
+		btnMunuLine.classList.add('btn-line--active');
     } else {
         btnMenuEl.setAttribute('aria-label', 'Показать меню');
+		btnMunuLine.classList.remove('btn-line--active');
     }
 
 	if( (window.matchMedia('(max-width: 1023px)').matches) && (headerEl.classList.contains('menu-open')) ) {

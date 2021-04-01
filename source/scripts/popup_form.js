@@ -3,7 +3,7 @@ for (let i=0, length = formBtnsCollection.length; i < length; i++) {
 		ev.preventDefault();
 
 		headerEl.classList.remove('menu-open');
-		bodyEl.classList.remove('js-fixed');
+		bodyEl.classList.add('js-fixed');
 		btnMunuLine.classList.remove('btn-line--active');
 
 		popupContainerEl.classList.add('animate-form');
@@ -15,6 +15,7 @@ for (let i=0, length = btnClosePopupCollection.length; i < length; i++) {
 		ev.preventDefault();
 
 		popupContainerEl.classList.remove('animate-form');
+		bodyEl.classList.remove('js-fixed');
 		popupContainerEl.classList.remove('animate-success');
 	});
 }
@@ -27,6 +28,7 @@ document.addEventListener('mousedown', function(e) {
 	if(!e.target.closest('.js-popup-form') && !e.target.closest('.js-popup-success') ){
 		popupContainerEl.classList.remove('animate-form');
 		popupContainerEl.classList.remove('animate-success');
+		bodyEl.classList.remove('js-fixed');
     }
 });
 
