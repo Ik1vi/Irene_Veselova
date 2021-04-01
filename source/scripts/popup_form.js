@@ -22,6 +22,7 @@ for (let i=0, length = btnClosePopupCollection.length; i < length; i++) {
 
 popupSuccessBtnEl.addEventListener('click', function() {
 	popupContainerEl.classList.remove('animate-success');
+	bodyEl.classList.remove('js-fixed');
 });
 
 document.addEventListener('mousedown', function(e) {
